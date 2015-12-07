@@ -1,0 +1,957 @@
+body, html, p, ul, li, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    font-family: "microsoft yahei";
+}
+
+body {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 500px ) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width: 450px ) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 450px ) {
+    html {
+        font-size: 45%;
+    }
+}
+
+/*@media screen and (max-width:400px ) {
+	html{
+		font-size: 40% ;
+	}
+}*/
+
+.ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.clear-F {
+    overflow: hidden;
+}
+
+.clear-F:after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.head-banner-box, .one, .two, .three, .four, .five, .foot {
+
+    width: 100%;
+    position: relative;
+
+}
+
+.head-nav-fiex {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    background: rgba(3, 82, 78, 0.5);
+    max-width: 640px;
+    min-width: 320px;
+}
+
+.head-content {
+    width: 68%;
+    padding: 2% 0;
+    float: left;
+    font-size: 2.3rem;
+    color: #fff;
+    text-align: center;
+}
+
+.head-tools {
+    width: 32%;
+    float: left;
+}
+
+.head-tools div {
+    box-sizing: border-box;
+    width: 30%;
+    padding: 6%;
+    margin-right: 1.5%;
+    text-align: center;
+    float: left;
+}
+
+/*草洼*/
+.caowa {
+    width: 13%;
+    position: absolute;
+    top: 10%;
+    left: 48%;
+    margin-left: -5%;
+}
+
+/*攻略*/
+.gl {
+    width: 20%;
+    position: absolute;
+    right: 5%;
+    top: 13%;
+}
+
+/*btn*/
+.banner-btns {
+    width: 80%;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    margin-left: -40%;
+}
+
+.banner-btns div {
+    width: 46%;
+    float: left;
+}
+
+#chongzhi {
+    margin-left: 8%;
+}
+
+/*鞋子*/
+.banner-foot {
+    width: 10%;
+    position: absolute;
+    left: 50%;
+    margin-left: -5%;
+    bottom: 4%;
+}
+
+/*one*/
+
+.color-f {
+    color: #ff2a53;
+    font-size: 2.2rem;
+}
+
+/*.one{
+	
+}*/
+.one img, .head-banner-box img, .three img, .two img, .four img, .five img, .foot img, .share-all div img, .pay_way li img {
+    display: block;
+    width: 100%;
+    line-height: 0;
+    border: 0;
+}
+
+.one-content {
+    position: absolute;
+    top: 17%;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    background: url(../images/one-bg.png) no-repeat;
+    background-size: 100%;
+    box-sizing: border-box;
+    padding: 5% 4% 10% 4%;
+}
+
+.content-c {
+    background: #eff7ff;
+    width: 100%;
+    padding-top: 7%;
+    padding-bottom: 0.5%;
+}
+
+.one-content p {
+    padding: 1% 0 0% 4%;
+    font-size: 1.8rem;
+    color: #2a7484;
+}
+
+.one-btn {
+    width: 35%;
+    margin: 2% auto 0% auto;
+}
+
+.query {
+    width: 10%;
+    position: absolute;
+    top: 8%;
+    right: 6%;
+}
+
+/*two*/
+
+/*.two*/
+.icon_box {
+    width: 85%;
+    padding: 1.5% 0;
+    margin: 0 auto;
+}
+
+.two .bg {
+    background: url(../images/two.png) no-repeat;
+    background-size: 100%;
+    padding-bottom: 15%;
+}
+
+.query_p {
+    top: 9%;
+    right: 7%;
+}
+
+.icon_box div {
+    width: 20%;
+    margin-left: 4%;
+    float: left;
+}
+
+.two .btn-mar {
+    margin: 2% auto 0% auto;
+}
+
+/*three*/
+.three .query_p {
+    top: 10%;
+}
+
+.three .bg {
+    background: url(../images/three.png) no-repeat;
+    background-size: 100%;
+}
+
+.three p {
+    padding-top: 1%;
+}
+
+.three .btn-mar {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    margin: 0 0 0 -17.5%;
+}
+
+.tab {
+    margin: 0% 0 24% 0;
+    position: absolute;
+}
+
+.tab table {
+    border-collapse: collapse;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.tab table tr:first-child {
+    background: #c7dff4;
+}
+
+.color {
+    color: #ff2a53 !important;
+}
+
+.pg {
+    padding: 5% 4% 65% 4%;
+}
+
+.tab td {
+    border: 1px solid #2a7484;
+    color: #2a7484;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.tab1 {
+    margin: 0% 0 24% 0;
+    position: absolute;
+}
+
+.tab1 p {
+    padding-top: 2%;
+
+}
+
+.tab-box {
+    position: relative;
+}
+
+.three-btns {
+    position: absolute;
+    top: 11%;
+    left: 50%;
+    width: 60%;
+    margin-left: -30%;
+    z-index: 100;
+}
+
+.three-btns div {
+    width: 47%;
+    float: left;
+    background: url(../images/red_01.png) no-repeat;
+    background-size: 100%;
+}
+
+.three .t-bg {
+    background: url(../images/red_03.png) no-repeat;
+    background-size: 100%;
+}
+
+.three-btns div:last-child {
+    margin-left: 6%;
+}
+
+/*four*/
+.four .bg {
+    background: url(../images/four.png) no-repeat;
+    background-size: 100%;
+}
+
+.four ul {
+    padding: 1% 0;
+    list-style: none;
+    padding-left: 4%;
+    font-size: 1.6rem;
+    color: #2a7484;
+}
+
+.four ul li {
+    border: 1px solid #2a7484;
+    padding: 0.5% 0;
+    text-align: center;
+    border-bottom: none;
+}
+
+.four ul li:last-child {
+    border-bottom: 1px solid #2a7484;
+}
+
+.Dk {
+    width: 90%;
+    margin: 1% auto;
+    font-size: 1.6rem;
+}
+
+.Dk-t {
+    padding: 1% 0;
+    width: 25%;
+    float: left;
+    color: #2a7484;
+    text-align: center;
+}
+
+.Dk-num {
+    width: 75%;
+    float: left;
+}
+
+.Dk-num div {
+    float: left;
+    width: 12%;
+    border: 3px solid #c7dff4;
+    border-left: none;
+    text-align: center;
+    padding: 1% 0;
+    color: #c7dff4;
+}
+
+.Dk-color-b {
+    color: #fff;
+    background: #bd1838;
+}
+
+.Dk-color-4 {
+    color: #fff;
+    background: #418813;
+}
+
+.Dk-num div:first-child {
+    border-left: 3px solid #c7dff4;
+}
+
+.zoomInUp5 {
+    padding: 3% 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.four .btn-mar {
+    margin: 0% auto 2% auto;
+}
+
+.pd {
+    padding-bottom: 30%;
+}
+
+/*five*/
+
+.five .bg {
+    background: url(../images/five.png) no-repeat;
+    background-size: 100%;
+}
+
+.mes-content {
+    background: url(../images/BG-G_03.png) no-repeat;
+    background-size: 100%;
+    padding: 20% 0;
+}
+
+.message {
+    width: 97%;
+    margin: 0 auto;
+}
+
+.mes-head {
+    color: #fff;
+    font-size: 2rem;
+    background: #2a7484;
+}
+
+.mes-head div {
+    float: left;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.mes-head div:nth-child(1) {
+    border-right: 1px solid #216877;
+    box-sizing: border-box;
+    width: 15%;
+}
+
+.mes-head div:nth-child(2) {
+    width: 70%;
+}
+
+.mes-head div:nth-child(3) {
+    width: 15%;
+}
+
+.mes-head a {
+    padding: 6%;
+    background: #fff;
+    color: #2a7484;
+}
+
+.input {
+    float: left;
+    width: 80%;
+    /*margin:-1px;*/
+    border: 3px solid #c7dff4;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.input input {
+    border: none;
+    width: 96%;
+    padding: 0% 0 0% 4%;
+    margin: 0;
+    box-sizing: border-box;
+    height: 34px;
+
+    font-size: 1.8rem;
+    background: #eff7ff;
+}
+
+.input input:focus {
+    outline: none;
+}
+
+#send {
+    float: left;
+    text-align: center;
+    width: 20%;
+    height: 40px;
+    box-sizing: border-box;
+    background: #04915D;
+    /*padding:3% 0;*/
+    color: #fff;
+    font-size: 2rem;
+    line-height: 40px;
+}
+
+.caohua-logo {
+    width: 35%;
+    position: absolute;
+    bottom: 12%;
+    left: 5%;
+}
+
+.foot-down {
+    width: 35%;
+    position: absolute;
+    bottom: 12%;
+    right: 5%;
+}
+
+.mb {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    position: fixed;
+    height: 100%;
+    z-index: 1200;
+    background: rgba(11, 11, 11, 0.5);
+}
+
+.login, .share, .Enroll {
+    margin: 5% auto;
+    width: 90%;
+}
+
+.login-h {
+    background-color: #0fb03d;
+    height: 35px;
+    padding: 10px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.login-c {
+    float: left;
+    width: 50px;
+    text-align: center;
+}
+
+.login-c img, #exit-h-l img {
+    width: 35px;
+}
+
+#exit-h-l {
+    float: right;
+    text-align: center;
+    width: 50px;
+}
+
+.login-h-t {
+    padding: 0 10px;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    font-size: 2.3rem;
+}
+
+.login-info {
+    width: 100%;
+    background: #fff;
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+
+.user, .pass {
+    width: 100%;
+    padding: 8px 0;
+
+    border: 1px solid #c3c3c3;
+    border-bottom: none;
+}
+
+.pass {
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.user div:nth-child(1), .pass div:nth-child(1) {
+    float: left;
+    width: 50px;
+    border-right: 1px solid #eee;
+    text-align: center;
+    height: 25px;
+
+}
+
+.user div img, .pass div img {
+    width: 20px;
+    height: 21px;
+}
+
+.user-input {
+    padding-left: 51px;
+    padding-right: 80px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.user-input input {
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 25px;
+}
+
+.yw {
+    width: 70px;
+    float: right;
+    height: 23px;
+    margin-right: 8px;
+    line-height: 23px;
+    color: #00abdc;
+    border-radius: 3px;
+    text-align: center;
+    border: 1px solid #00abdc;
+}
+
+.login-btns {
+    width: 100%;
+    background: #Fff;
+    box-sizing: border-box;
+    padding: 0 10px 18px 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+#regedit, #login {
+    float: left;
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 2rem;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#login {
+    background-color: #0bc402;
+    margin-left: 10%;
+}
+
+#regedit {
+    background-color: #fc6c0c;
+}
+
+/*快速注册*/
+.Enroll {
+    background: #fff;
+    padding-bottom: 1px;
+    border-radius: 5px;
+}
+
+.Enroll-h > div {
+    width: 50%;
+    float: left;
+}
+
+.iphone {
+    background: #0fb03d;
+    padding: 10px 0;
+    border-radius: 5px 0 0 0;
+}
+
+.i_active {
+    color: #0fb03d !important;
+    background: #fff;
+}
+
+.i_active div {
+    color: #0fb03d !important;
+}
+
+.iphone img {
+    width: 20px;
+    height: 30px;
+}
+
+.iphone div:nth-child(1) {
+    float: left;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+.iphone div:nth-child(2) {
+    width: 100%;
+    font-size: 2rem;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    color: #fff;
+    padding-left: 60px;
+}
+
+.zc-uset {
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 0 5px 0 0;
+}
+
+.zc-uset img {
+    width: 30px;
+}
+
+.zc-uset div:nth-child(1) {
+    float: left;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+.zc-uset div:nth-child(2) {
+    width: 100%;
+    font-size: 2rem;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    color: #0fb03d;
+    border-radius: 0 5px 0 0;
+    padding-left: 60px;
+}
+
+.zhuce {
+    width: 90%;
+    margin: 3% auto 2% auto;
+    background: #FC6C0C;
+    color: #fff;
+    text-align: center;
+    padding: 3% 0;
+    font-size: 2rem;
+    border-radius: 5px;
+}
+
+.zc-txt {
+    width: 90%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+.zc-txt div {
+    color: #d6d6d6;
+    font-size: 1.6rem;
+}
+
+.zc-txt div:first-child {
+    float: right;
+    color: #00abdc;
+    font-size: 1.8rem;
+}
+
+/*分享*/
+.share {
+    background-color: #Fff;
+    border-radius: 5px;
+    padding-bottom: 1px;
+}
+
+.share-all {
+    background-color: #Fff;
+    width: 100%;
+    padding: 18px 10px;
+    box-sizing: border-box;
+}
+
+.share-all div {
+    float: left;
+    box-sizing: border-box;
+    padding: 1.5%;
+    width: 20%;
+}
+
+.center {
+    text-align: center;
+}
+
+.share-all div p {
+    text-align: center;
+    padding-top: 10px;
+    margin: 0 -10px;
+    color: #e4e4e4;
+    font-size: 1.8rem;
+}
+
+.share-exit {
+    width: 80%;
+    margin: 0 auto 18px auto;
+    text-align: center;
+    height: 40px;
+    font-size: 2rem;
+    line-height: 40px;
+    background: #fc6c0c;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/*充值*/
+.pay-title {
+    width: 95%;
+    box-sizing: border-box;
+    padding: 5px 0;
+    margin: 0 auto;
+    border-bottom: 1px solid #C3C3C3;
+
+}
+
+.pay-title div {
+    float: left;
+    font-size: 1.8rem;
+    padding: 5px 0;
+}
+
+.pay-title div:nth-child(2) {
+    color: #ff2a53;
+    float: right;
+}
+
+.pay_num {
+    width: 94%;
+    margin: 0 auto;
+}
+
+.pay_num table {
+    width: 100%;
+    color: #94b9c1;
+    text-align: center;
+}
+
+.pay_num table td {
+    border: 3px solid #94b9c1;
+    padding: 3% 0%;
+    font-size: 1.8rem;
+    width: 30.3333333%;
+}
+
+.pay_num .td_last {
+    padding: 0;
+    position: relative
+}
+
+.td_last input {
+    width: 100%;
+    border: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;;
+    font-size: 1.8rem;
+    color: #94b9c1;
+    text-align: center;
+}
+
+.color_active {
+    border: 3px solid #60b63c;
+}
+
+.user_border {
+    margin: 0 auto;
+    border-bottom: 1px solid #eee;
+    width: 94%;
+    text-indent: 0;
+}
+
+.user_txt {
+    width: 90%;
+    padding-bottom: 1.5%;
+    /*text-indent: 20px;*/
+    margin: 0 auto;
+    font-size: 1.8rem;
+
+}
+
+.pay_way {
+    width: 94%;
+    margin: 0 auto;
+
+}
+
+.pay_way ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 2% 0;
+}
+
+.pay_way ul:after {
+    content: '';
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.pay_way ul li {
+    float: left;
+    width: 30%;
+    margin-left: 2.5%;
+    box-sizing: border-box;
+    border: 3px solid #60b63c;
+}
+
+.txt {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0% 0% 2% 0%;
+}
+
+.rmb {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 3%;
+}
+
+.rmb .money {
+    padding: 3% 0;
+    float: left;
+    width: 70%;
+    background: #333333;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.rmb .pay {
+    width: 30%;
+    padding: 3% 0;
+    text-align: center;
+    float: left;
+    color: #fff;
+    font-size: 1.6rem;
+    background: #1AD202;
+}
+
+/*中奖了*/
+
+.winning {
+    padding: 5% 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.winning div {
+    margin: 3% 0 2% 0;
+    font-size: 2rem;
+    color: #2a7484;
+}
+
+.winning .exit {
+    width: 80%;
+    margin: 6% auto 0% auto;
+    text-align: center;
+    color: #fff;
+    font-size: 2.3rem;
+    border-radius: 5px;
+    padding: 5% 0;
+    background: #2a7484;
+}
+
+
+
+
+
+

@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+</head>
+<body>
+
+
+<!--用户登录-->
+<div class="mb">
+    <!--登录-->
+    <div class="login" id="login-b">
+        <div class="login-h clear-F">
+            <div class="login-c">
+                <img src="images/min-ch.png"/>
+            </div>
+            <div id="exit-h-l">
+                <img src="images/exit-l.png"/>
+            </div>
+            <div class="login-h-t">
+                用户登录
+            </div>
+        </div>
+        <div class="login-info">
+            <div class="user clear-F">
+                <div><img src="images/user.png"/></div>
+                <div class="user-input"><input type="text" placeholder="请输入用户名"/></div>
+            </div>
+            <div class="pass">
+                <div><img src="images/pass.png"/></div>
+                <div class="yw">忘记密码？</div>
+                <div class="user-input"><input type="text" placeholder="请输入用户名"/></div>
+
+            </div>
+        </div>
+        <div class="login-btns clear-F">
+            <div id="regedit">快速注册</div>
+            <div id="login">登录</div>
+        </div>
+    </div>
+
+
+    <!--快速注册-->
+    <div class="Enroll" style="display: none;">
+
+        <div class="Enroll-h clear-F">
+            <div class="iphone">
+                <div><img src="images/iphone.png "/></div>
+                <div>手机号注册</div>
+            </div>
+            <div class="zc-uset ">
+                <div><img src="images/zc-user1.png"/></div>
+                <div>快速注册</div>
+            </div>
+        </div>
+
+
+        <div id="iphone-zc" style="display: none;">
+            <div class="login-info">
+                <div class="user clear-F">
+                    <div><img src="images/user.png"/></div>
+                    <div class="user-input"><input type="text" placeholder="请输入用户名"/></div>
+                </div>
+                <div class="pass">
+                    <div><img src="images/pass.png"/></div>
+
+                    <div class="user-input"><input type="text" placeholder="请输入密码"/></div>
+
+                </div>
+            </div>
+
+            <div class="zhuce">
+                注册
+            </div>
+
+            <div class="zc-txt clear-F">
+                <div>&lt;返回登录</div>
+                <div>注册即同意《草花服务条款》</div>
+
+            </div>
+        </div>
+
+
+        <!--手机注册-->
+        <div id="iphone-zc">
+            <div class="login-info">
+                <div class="user clear-F">
+                    <div><img src="images/user.png"/></div>
+                    <div class="yw" style="width:90px">重新发送(<span>60</span>s)？</div>
+                    <div class="user-input" style="padding-right: 100px;"><input type="text" placeholder="请输入用户名"/>
+                    </div>
+                </div>
+                <div class="pass">
+                    <div><img src="images/pass.png"/></div>
+                    <div class="user-input"><input type="text" placeholder="请输入密码"/></div>
+                </div>
+            </div>
+            <div class="zhuce">
+                注册
+            </div>
+
+            <div class="zc-txt clear-F">
+                <div>&lt;返回登录</div>
+                <div>注册即同意《草花服务条款》</div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!--分享-->
+<div class="mb" style="display: none;">
+    <div class="share">
+        <div class="login-h clear-F">
+            <div class="login-h-t center">
+                分享
+            </div>
+        </div>
+
+        <div class="share-all clear-F">
+            <div>
+                <img src="images/qq.png"/>
+                <p>qq好友</p>
+            </div>
+            <div>
+                <img src="images/qq-qzone.png"/>
+                <p>qq空间</p>
+            </div>
+            <div>
+                <img src="images/weibo.png"/>
+                <p>腾讯微博</p>
+            </div>
+            <div>
+                <img src="images/sina.png"/>
+                <p>新浪</p>
+            </div>
+            <div>
+                <img src="images/weichat.png"/>
+                <p>微信</p>
+            </div>
+        </div>
+        <div class="share-exit">取消</div>
+    </div>
+</div>
+
+
+<!--充值-->
+<div class="mb" style="display: none;">
+    <div class="share">
+        <div class="login-h clear-F">
+            <div id="exit-h-l">
+                <img src="images/exit-l.png"/>
+            </div>
+            <div class="login-h-t center">
+                充值草花币
+            </div>
+        </div>
+
+        <div class="pay-b">
+            <div class="pay-title clear-F">
+                <div>选择充值金额</div>
+                <div>注:1元=10草花币+10积分</div>
+            </div>
+        </div>
+
+        <div class="pay_num">
+            <table cellspacing="12">
+                <tr>
+                    <td>100元</td>
+                    <td>200元</td>
+                    <td>300元</td>
+                </tr>
+                <tr>
+                    <td>1000元</td>
+                    <td>2000元</td>
+                    <td class="td_last"><input type="number" placeholder="其它"/></td>
+                </tr>
+            </table>
+        </div>
+        <p class="user_border user_txt">支付方式</p>
+        <div class="pay_way">
+            <ul>
+                <li>
+                    <img src="images/AliPay.png"/>
+                </li>
+            </ul>
+        </div>
+        <div class="txt">
+            <p>充值问题请联系客服QQ360006000</p>
+            <p>或值班客服QQ800032511，草花币可用于充值游戏。</p>
+            <p>值班时间：08:00-24:00</p>
+        </div>
+        <div class="rmb clear-F">
+            <div class="money">应付：￥<span id="rmb">00.00</span> ( 获得:<span id="chb">00</span>草花币 )</div>
+            <div class="pay">立即支付</div>
+        </div>
+    </div>
+</div>
+
+<!--中奖了。-->
+<div class="mb" style="display:none ;">
+    <div class="share">
+        <div class="login-h clear-F">
+            <div id="exit-h-l">
+                <img src="images/exit-l.png"/>
+            </div>
+            <div class="login-h-t center">
+                中奖了
+            </div>
+        </div>
+        <div class="winning">
+            <div>恭喜你获得<span id="win">xxx</span>奖励</div>
+            <div style="text-indent: 25px;">奖励会自动发放到您的账号，请到您的账户 中心查收。明天记得来看我哦，点我100%中奖。</div>
+
+            <div class="exit">我知道了</div>
+        </div>
+
+    </div>
+</div>
+
+<!--抽过了。-->
+<div class="mb" style="display:none ;">
+    <div class="share">
+        <div class="login-h clear-F">
+            <div id="exit-h-l">
+                <img src="images/exit-l.png"/>
+            </div>
+            <div class="login-h-t center">
+                抽过了
+            </div>
+        </div>
+        <div class="winning">
+            <div style="text-indent: 25px;">您今天已经抽过奖了哦。每天一次100%中 奖，明天记得再来哈！</div>
+
+            <div class="exit">我知道了</div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--温馨提示-->
+<div class="mb" style="display: none;">
+    <div class="share">
+        <div class="login-h clear-F">
+            <div id="exit-h-l">
+                <img src="images/exit-l.png"/>
+            </div>
+            <div class="login-h-t center">
+                温馨提示
+            </div>
+        </div>
+        <div class="winning">
+            <div>每天登录活动页面，点击草娃头有礼品送哦！ 100%中奖。</div>
+            <div>活动时间：2015.12.31-2016.1.6</div>
+            <div>活动奖励：草花币、积分、实物周边</div>
+            <div class="exit">我知道了</div>
+        </div>
+
+    </div>
+</div>
+
+<!--温馨提示-->
+<div class="mb" style="display: none;">
+    <div class="share">
+        <div class="login-h clear-F">
+            <div id="exit-h-l">
+                <img src="images/exit-l.png"/>
+            </div>
+            <div class="login-h-t center">
+                温馨提示
+            </div>
+        </div>
+        <div class="winning">
+            <div style="text-indent: 25px;">啊哦，您的祝福机会已经达到上限哦！想要 送祝福，就当面去送吧。给草花送祝福和建议请 联系客服QQ：8000325</div>
+            <div class="exit">我知道了</div>
+        </div>
+
+    </div>
+</div>
+
+
+<!--浮动nav-->
+<div class="head-nav-fiex clear-F">
+    <div class="head-content">要礼包来草花 免费玩游戏</div>
+    <div class="head-tools clear-F">
+        <div><a href="#"><img width="100%" src="images/down_app.png"/></a></div>
+        <div><a href="#"><img width="100%" src="images/zhuce.png"/></a></div>
+        <div><a href="#"><img width="100%" src="images/exit.png"/></a></div>
+    </div>
+</div>
+
+
+<!--固定nav-->
+<!--<div class="head-nav-fiex clear-F">
+    <div class="head-content">要礼包来草花 免费玩游戏</div>
+    <div class="head-tools clear-F">
+        <div><a href="#"><img width="100%" src="images/down_app.png"/></a></div>
+        <div><a href="#"><img width="100%"  src="images/zhuce.png"/></a></div>
+        <div><a href="#"><img width="100%"  src="images/exit.png"/></a></div>
+    </div>
+</div>-->
+
+<div class="head-banner-box">
+    <img width="100%" src="images/baner.jpg"/>
+    <div class="caowa">
+        <img width="100%" src="images/caowa.png"/>
+    </div>
+    <div class="gl">
+        <img width="100%" src="images/gl-btn.png"/>
+    </div>
+
+    <div class="banner-btns clear-F">
+        <div><img width="100%" src="images/login-btn.png"/></div>
+        <div id="chongzhi"><img width="100%" src="images/cz-btn.png"/></div>
+    </div>
+    <div class="banner-foot">
+        <img src="images/foot.png"/>
+    </div>
+</div>
+<!--one-->
+<div class="one">
+    <img src="images/eeee_02.jpg"/>
+    <div class="query"><img src="images/yw.png"/></div>
+    <div class="one-content">
+        <img width="100%" src="images/title2.jpg"/>
+        <p>Top1:元旦节<span class="color-f">99</span>款游戏新礼包<span class="color-f">1000000</span>个人人有份, 助你称雄！</p>
+        <p>Top2:刮刮乐，每日<span class="color-f"></span>5次免费刮奖机会。1月1日<span class="color-f">100% </span>中奖，礼品统统抱回家！</p>
+        <div class="one-btn">
+            <img src="images/btn_1.jpg"/>
+        </div>
+    </div>
+</div>
+<!--tow-->
+<div class="two">
+    <img src="images/eeee_03.jpg"/>
+    <div class="query query_p"><img src="images/yw.png"/></div>
+    <div class="one-content bg">
+        <img width="100%" src="images/title3.jpg"/>
+        <div class="icon_box clear-F">
+            <div><a href="#"><img width="100%" src="images/icon3.png"/></a></div>
+            <div><a href="#"><img width="100%" src="images/icon2.png"/></a></div>
+            <div><a href="#"><img width="100%" src="images/icon1.png"/></a></div>
+            <div><a href="#"><img width="100%" src="images/icon.png"/></a></div>
+        </div>
+        <p>2015.12.31-2016.1.6 新老用户在手游APP上下载上述 新游并<span class="color-f">创建新角色</span>升级至指定等级，免费送草花 币首充</p>
+        <p><span class="color-f">注：</span>老用户玩新区也可以哦！</p>
+        <div class="one-btn btn-mar">
+            <img width="100%" src="images/btn-2.jpg"/>
+        </div>
+    </div>
+</div>
+<!--three-->
+<div class="three">
+    <img src="images/eeee_04.jpg"/>
+    <div class="query query_p"><img src="images/yw.png"/></div>
+    <div class="three-btns">
+        <div class="t-bg"><img src="images/red0_t.png"/></div>
+        <div><img src="images/red1_t.png"/></div>
+    </div>
+    <div class="one-content bg pg">
+        <img width="100%" src="images/title4.jpg"/>
+        <div class="tab-box">
+            <div class="tab ka">
+                <p>2015.12.31-2016.1.6 任意充值方式充值游戏币，排名 前<span class="color-f">30</span>名可获奖。</p>
+                <table width="100%">
+                    <tr>
+                        <td width="35%">充值排名</td>
+                        <td>奖励</td>
+                    </tr>
+                    <tr>
+                        <td>第一名</td>
+                        <td class="color">5000草花币+草花大礼包*1</td>
+                    </tr>
+                    <tr>
+                        <td>第2-10名</td>
+                        <td class="color">2000草花币+草花U盘*1</td>
+                    </tr>
+                    <tr>
+                        <td>第11-30名</td>
+                        <td class="color">1000草花币</td>
+                    </tr>
+                </table>
+                <p>参与游戏：红警尤里的复仇、圣斗士2、帝国时代、 征途口袋版、新仙剑奇侠传。</p>
+            </div>
+
+            <div class="tab1 ka" style="display:none;">
+                <p>Top1:2015.12.31-2016.1.6手游APP充值草花币享<span class="color-f">95折 </span>优惠。</p>
+
+                <p>1元=10草花币+10积分</p>
+                <p>草花币是草花平台专属货币，可用于充值游戏币，积 分可用于草花平台领取高级礼包和参加活动。</p>
+            </div>
+        </div>
+        <div class="one-btn btn-mar">
+            <img width="100%" src="images/btn-3.jpg"/>
+        </div>
+    </div>
+</div>
+
+
+<!--four-->
+<div class="four">
+    <img src="images/eeee_05.jpg"/>
+    <div class="query"><img src="images/yw.png"/></div>
+    <div class="one-content bg pd" style="top:14%">
+        <img width="100%" src="images/title5.jpg"/>
+        <p>每日充值<span class="color-f">100元</span>草花币，连续充值对应天数可获得 充值总金额<span class="color-f">40%</span>草花币赠送。</p>
+        <ul>
+            <li class="ellipsis">连续<span class="color-f">1</span>天充值满100元送充值金额<span class="color-f">20%</span>次草花币</li>
+            <li class="ellipsis">连续<span class="color-f">4</span>天充值满100元送充值金额<span class="color-f">30%</span>次草花币</li>
+            <li class="ellipsis">连续<span class="color-f">7</span>天充值满100元送充值金额<span class="color-f">40%</span>次草花币</li>
+        </ul>
+
+        <div class="Dk clear-F">
+            <div class="Dk-t clear-F">打卡记录</div>
+            <div class="Dk-num clear-F">
+                <div class="Dk-color-4">31</div>
+                <div class="Dk-color-b">1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+            </div>
+        </div>
+        <div class="zoomInUp5 color">仅限该按钮充值送40%（充值95折）</div>
+        <div class="one-btn btn-mar">
+            <img width="100%" src="images/btn-4.jpg"/>
+        </div>
+    </div>
+</div>
+<!--five-->
+<div class="five">
+    <img src="images/eeee_06.jpg"/>
+    <div class="query"><img src="images/yw.png"/></div>
+
+    <div class="one-content bg pd" style="top:15%">
+        <img width="100%" src="images/title6.jpg"/>
+        <div class="message">
+            <div class="mes-head clear-F">
+                <div>精选</div>
+                <div class="ellipsis">cin**dy:草花，祝你越办越好！</div>
+                <div><a>更多</a></div>
+            </div>
+
+            <div class="mes-content"></div>
+
+            <div class="send-mes clear-F">
+                <div class="input">
+                    <input type="text" placeholder="让我听到更多的声音，领取20积分"/>
+                </div>
+                <div id="send">
+                    发送
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--foot-->
+<div class="foot">
+    <img src="images/eeee_07.jpg"/>
+
+    <div class="caohua-logo">
+        <a href="#"><img src="images/foot-logo.jpg"/></a>
+    </div>
+    <div class="foot-down">
+        <a href="#"><img src="images/foot-down.jpg"/></a>
+    </div>
+
+
+</div>
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
