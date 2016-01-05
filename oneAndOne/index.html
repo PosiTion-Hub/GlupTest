@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />   
+		<meta name="renderer" content="webkit">
+       	<meta name="format-detection" content="telephone=no">
+       	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+       	<script type="text/javascript">
+       		window.onresize=function(){
+       			setFontSize();
+       		}
+       		setFontSize();
+       		function setFontSize(){
+       			var deviceWidth=document.documentElement.clientWidth;
+				if(deviceWidth > 640) deviceWidth = 640;
+				document.documentElement.style.fontSize = deviceWidth / 28 + 'px';
+       		}
+       	</script>
+	</head>
+	<body>
+		
+			
+		<div class="code_t" style="display: none;">
+			<img width="100%" src="images/prize_bjb.jpg"/>
+		</div>
+		
+		
+		<!--提示弹框-->
+		<!--中奖了。优惠券-->
+		<div class="mb" style="display: none;">
+			<div class="content-b">
+				<img src="images/titile_bj.png"/>
+				<div class="title-img"><img src="images/title_win.png"/></div>
+				<div class="content">
+					<h3>幸运女神眷顾!</h3>
+					<p>恭喜你抽中：</p>
+					<div><img src="images/6z.png"/></div>
+					<h5>草花币6折充值券</h5>
+					
+					<div class="btns clearfix">
+						<div class="exit"><img src="images/enter.png"/></div>
+						<div style="margin-left: 10%;"><img src="images/czchb.png"/></div>
+					</div>
+					<article>
+						使用方法：<br />
+						可以点击上方的按钮或在获奖记录内充值草花币使用哦! 活动结束后将无法使用，请及时使用哦！
+					</article>
+				</div>
+				
+			</div>
+		</div>
+		<!--中奖了。草花币 或则积分-->
+		<div class="mb" style="display: none;">
+			<div class="content-b">
+				<img src="images/titile_bj.png"/>
+				<div class="title-img"><img src="images/title_win.png"/></div>
+				<div class="content">
+					<h3>运气不错嘛!</h3>
+					<p>恭喜你抽中：</p>
+					<div style="width:21%"><img src="images/caob.png"/></div>
+					<h5>草花币88</h5>
+					
+					<div class="btns clearfix">
+						<div class="exit"><img src="images/enter.png"/></div>
+						<div style="margin-left: 10%;"><img src="images/czchb.png"/></div>
+					</div>
+					<article>
+						使用方法：<br />
+						可以点击上方的按钮或在获奖记录内充值草花币使用哦! 活动结束后将无法使用，请及时使用哦！
+					</article>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!--没中奖。-->
+		<div class="mb" style="display:none ;">
+			<div class="content-b">
+				<img src="images/titile_bj.png"/>
+				<div class="title-img" style="top:-10%;"><img src="images/title_nowin.png"/></div>
+				<div class="content">
+					<h3 style="margin:4% 0">啊哦，没有中奖哦！</h3>
+					<div style="width:21%"><img src="images/no.png"/></div>
+					<h5 style="margin: 5% 0;">再来一次<br />长这么漂亮下次一定中</h5>
+					
+					<div class="btns clearfix">
+						<div class="exit"><img src="images/enter.png"/></div>
+						<div style="margin-left: 10%;"><img src="images/jx.png"/></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!--领取奖励-->
+			<div class="mb" style="display:none ;">
+			<div class="content-b">
+				<img src="images/titile_bj.png"/>
+				<div class="title-img" style="top:-10%;"><img src="images/title_claim.png"/></div>
+				<div class="content">
+					<h3 style="margin:8% 0;color:#000;">恭喜您成功完成了绑定手机号码任务！</h3>
+					<p>成功领到：</p>
+					<h5 style="margin: 5% 0;font-size: 1.4rem;color:#fe241d;">10草花币<a style="font-size: 1rem;color:#000;"> 和 </a>一次抽奖机会</h5>
+					
+					<div class="btns clearfix">
+						<div class="exit"><img src="images/enter.png"/></div>
+						<div style="margin-left: 10%;"><img src="images/go.png"/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--任务未完成-->
+			<div class="mb" style="display: none;">
+			<div class="content-b">
+				<img src="images/titile_bj.png"/>
+				<div class="title-img" style="top:-10%;"><img src="images/title_nocomplete.png"/></div>
+				<div class="content">
+					<h3 class="txt-l" style="margin-top:8% ;color:#000;">您还没完成任务，赶快去完成任务领取奖励吧！</h3>
+					<p class="txt-l"  style="padding-left:0;">以下是任务内容：</p>
+					<h5 class="txt-l"  style="margin: 5% 0;font-size: 1.4rem;color:#fe241d;">
+						<a style="font-size: 1rem;color:#000;"> 绑定手机号码  </a>+10草花币
+					</h5>
+					<p class="txt-l"  style="font-size: 1rem;margin-bottom: 5%;padding:0;">完成绑定后可领取</p>
+					<div class="btns clearfix">
+						<div class="exit"><img src="images/enter.png"/></div>
+						<div style="margin-left: 10%;"><img src="images/rw.png"/></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--记录-->
+		<div class="mb" style="display: none;" id="jl">
+			<div class="content-b jl">
+				<div class="eixt exit"><img src="images/close.png"/></div>
+				<div class="title-img" style="top:-10%;"><img src="images/title_list.png"/></div>
+				<div class="Btns clearfix">
+					<div><img src="images/title_task_b.png"/></div>
+					<div><img src="images/title_prize_a.png"/></div>
+				</div>
+				<div class="content-j">
+					<table >
+						<tr><th width="30%">获奖时间</th><th width="30%">内容</th><th width="40%">奖励</th></tr>
+						<tr><td>第一个</td><td>Data</td><td>Data</td></tr>
+						<tr><td>第一个</td><td>Data</td><td><a class="ellipsis">草花币6折券</a><a><img src="images/recharge.png"/></a></td></tr>
+						<tr><td>第一个</td><td>Data</td><td>Data</td></tr>
+						<tr><td>第一个</td><td>Data</td><td>Data</td></tr>
+						<tr><td>Data</td><td>Data</td><td>Data</td></tr>
+					</table>
+				</div>
+				
+				<div class="content-j" style="display: none;">
+					<table >
+						<tr><th width="30%">获奖时间</th><th width="30%">内容</th><th width="40%">奖励</th></tr>
+						<tr><td>第二个</td><td>Data</td><td>Data</td></tr>
+						<tr><td>第二个</td><td>Data</td><td><a class="ellipsis">草花币6折券</a><a><img src="images/recharge.png"/></a></td></tr>
+						<tr><td>第二个</td><td>Data</td><td>Data</td></tr>
+						<tr><td>Data</td><td>Data</td><td>Data</td></tr>
+						<tr><td>Data</td><td>Data</td><td>Data</td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--用户登录-->
+		<div class="mb"  id="login-b"  style="display:none ;">
+			<!--登录-->
+			<div class="login">
+				<div class="login-h clearfix">
+					<div class="login-a">
+						<img src="images/min-ch.png"/>
+					</div>
+					<div class="exit-h-l ext">
+						<img src="images/exit-l.png"/>
+					</div>
+					<div class="login-h-t">
+						用户登录
+					</div>
+				</div>
+				<div class="login-info">
+					<div class="user clearfix">
+						<div><img src="images/user.png"/></div>
+						<div class="user-input"><input type="text" placeholder="请输入用户名" /></div>
+					</div>
+					<div class="pass">
+						<div><img src="images/pass.png"/></div>
+						<div class="yw">
+							<a href="#">忘记密码？</a>
+						</div>
+						<div class="user-input"><input type="password" placeholder="请输入密码" /></div>
+						
+					</div>
+				</div>
+				<div class="login-btns clearfix">
+					<div id="regedit">快速注册</div>
+					<div id="login">登录</div>
+				</div>
+			</div>
+		
+			
+			
+		</div>
+		
+		
+		<!--分享-->
+		<div class="mb" style="display:none ;" id="share-b">
+			<div class="share">
+				<div class="login-h clearfix">
+					<div class="login-h-t center">
+						分享
+					</div>
+				</div>
+				
+				<div class="share-all clearfix">
+					<!--<div>
+						<img src="images/qq.png"/>
+						<p>qq好友</p>
+					</div>-->
+					<div id="qzone">
+						<img src="images/qq-qzone.png"/>
+						<p>QQ空间</p>
+					</div>
+					<div id="weibo">
+						<img src="images/weibo.png"/>
+						<p>腾讯微博</p>
+					</div>
+					<div id="sina">
+						<img src="images/sina.png"/>
+						<p>新浪</p>
+					</div>
+					<div id="weichat">
+						<img src="images/weichat.png"/>
+						<p>微信</p>
+					</div>
+				</div>
+				<div class="share-exit  ext">取消</div>
+			</div>
+		</div>
+		
+		
+		<!--充值-->
+		<div class="mb" style="display: none;" id="czc">
+			<div class="share">
+				<div class="login-h clearfix">
+					<div class="exit-h-l  ext">
+						<img src="images/exit-l.png"/>
+					</div>
+					<div class="login-h-t center">
+						充值草花币
+					</div>
+				</div>
+				
+				<div class="pay-b">
+					<div class="pay-title clearfix" style="border: none;">
+						<div style="color:#aaa; width:100%;border-bottom: 1px solid #C3C3C3;">选择充值折扣</div>
+						<ul class="zk " style="clear: both;">
+							<li class="clearfix"><span>9折优惠券</span><a checked="false" data="0.9"><img src="images/line.png"/></a></li>
+							<li class="clearfix"><span>8折优惠券</span><a checked="false" data="0.8"><img src="images/line.png"/></a></li>
+							<li class="clearfix"><span>6折优惠券</span><a checked="false" data="0.6"><img src="images/line.png"/></a></li>
+						</ul>
+					</div>
+				</div>
+				
+				
+				<div class="pay-b">
+					<div class="pay-title clearfix">
+						<div>选择充值金额</div>
+						<div>注:1元=10草花币+10积分</div>
+					</div>
+				</div>
+				
+				<div class="pay_num">
+					<table cellspacing="12">
+						<tr><td class="color_active">100元</td><td>200元</td><td>300元</td></tr>
+						<tr><td>1000元</td><td>2000元</td><td class="td_last" ><input type="number" placeholder="其它" /></td></tr>
+					</table>
+				</div>
+				<p class="user_border user_txt">支付方式</p>
+				<div class="pay_way">
+					<ul>
+						<li>
+							<img src="images/AliPay.png"/>
+						</li>
+					</ul>
+				</div>
+				<div class="txt-c">
+					<p>充值问题请联系客服QQ360006000</p>
+					<p>或值班客服QQ800032511，草花币可用于充值游戏。</p>
+					<p>值班时间：08:00-24:00</p>
+				</div>
+				<div class="rmb clearfix">
+					<div class="money">仅需支付:￥<span id="rmb">100</span><u style="text-decoration: line-through;font-size: 0.7rem;">( 原价:￥<span id="chb">100</span>  )</u></div>
+					<div class="pay">立即支付</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="head-nav clearfix">
+			<div class="logo-img float-l">
+				<a target="_blank" href="http://www.caohua.com"><img src="images/PSD_01.png"/></a>
+			</div>
+			<div class="float-l nav clearfix">
+				<div class="float-l">
+					<a target="_blank" href="http://dl7.caohua.com/APK/caohua/1/1/caohua.apk"><img src="images/appDown.png"/></a>
+				</div>
+				
+				<div class="float-l" id="share">
+					<a target="_blank" ><img src="images/cz.png"/></a>
+				</div>
+				
+				<div class="float-l">
+					<a target="_blank" href="http://member.caohua.com/Wap/Reg.aspx"><img src="images/zc.png"/></a>
+					
+				</div>
+			</div>
+		</div>
+		<div class="banner">
+			<img src="images/banner.jpg"/>
+			<div class="app-d">
+				<div><img src="images/game.png"/></div>
+				<div><img src="images/appd.png"/></div>
+			</div>
+			<!--登录前-->
+			<div class="app-d" style="left:auto;right: 9%;">
+				<div ><img src="images/pen.png"/></div>
+				<div id="Lgin"><img src="images/login.png"/></div>
+			</div>
+			
+			<!--登录后-->
+			<!--<div class="login-c">
+				<div class="ellipsis">欢迎您:<br />wangfasdfzimusb</div>
+				<div><img src="images/logout.png"/></div>
+			</div>-->
+			
+			<div class="getJl JL"><img src="images/prize_suspen.png"/></div>
+		</div>
+		<div class="getName">
+			<img src="images/list.jpg"/>
+			<div class="getNameMove-b">
+				<ul id="gName">
+					<li>恭喜，sb 获得了<a class="red">10000000</a>的草花币</li>
+					<li>恭喜，sb 获得了<a class="red">10000000</a>的草花币</li>
+					<li>恭喜，sb 获得了<a class="red">10000000</a>的草花币</li>
+					<li>恭喜，sb 获得了<a class="red">10000000</a>的草花币</li>
+					<li>恭喜，sb 获得了<a class="red">10000000</a>的草花币</li>
+				</ul>
+				
+			</div>
+		</div>
+		<!--任务-->
+		<div class="task">
+			<img src="images/points.jpg"/>
+			<div class="taskBtns clearfix">
+				<div><img src="images/newhand_a.png"/></div>
+				<div><img src="images/daily_b.png"/></div>
+			</div>
+			<div class="taskTab-1">
+				<div class="list clearfix">
+					<div class="icon"><img src="images/icon1.png"/></div>
+					<div class="txt">
+						<p>注册奖励<a class="font-s red">+10</a>积分</p>
+						<p class="pd">完成注册，即可领取奖励！</p>
+						<div class="btn"><img src="images/lq.png"/></div>
+					</div>
+				</div>
+				
+				<div class="list clearfix">
+					<div class="icon"><img src="images/icon2.png"/></div>
+					<div class="txt">
+						<p>绑定手机号码<a class="font-s red">+10</a>草花币</p>
+						<p class="pd">完成绑定，即可领取奖励！</p>
+						<div class="btn"><img src="images/lq.png"/></div>
+					</div>
+				</div>
+				
+				<div class="list clearfix">
+					<div class="icon"><img src="images/icon3.png"/></div>
+					<div class="txt">
+						<p>下载游戏<a class="font-s red">+50</a>草花币</p>
+						<p class="pd">下载任意游戏登录后即可领取！</p>
+						<div class="btn"><img src="images/lq.png"/></div>
+					</div>
+				</div>
+				<div class="list clearfix">
+					<div class="icon"><img src="images/icon3.png"/></div>
+					<div class="txt">
+						<p>下载草花APP<a class="font-s red">+50</a>积分</p>
+						<p class="pd">下载APP登录后可领取！</p>
+						<div class="btn"><img src="images/lq.png"/></div>
+					</div>
+				</div>
+				<div class="list clearfix">
+					<div class="icon"><img src="images/icon5.png"/></div>
+					<div class="txt">
+						<p>完成首冲<a class="font-s red">+50</a>草花币</p>
+						<p class="pd ellipsis">充值草花币和游戏币都可以领取！</p>
+						<div class="btn"><img src="images/ylq.png"/></div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--日常-->
+			<div class="taskTab-1" id="EveryDay">
+				<div class="list clearfix">
+					<div class="icon"><img src="images/icon1.png"/></div>
+					<div class="txt">
+						<p>注册奖励<a class="font-s red">+10</a>积分</p>
+						<p class="pd">完成注册，即可领取奖励！</p>
+						<div class="btn"><img src="images/lq.png"/></div>
+					</div>
+				</div>
+				
+				<div class="list clearfix">
+					<div class="icon"><img src="images/icon2.png"/></div>
+					<div class="txt">
+						<p>绑定手机号码<a class="font-s red">+10</a>草花币</p>
+						<p class="pd">完成绑定，即可领取奖励！</p>
+						<div class="btn"><img src="images/lq.png"/></div>
+					</div>
+				</div>
+				
+				<div class="list clearfix">
+					<div class="icon"><img src="images/icon3.png"/></div>
+					<div class="txt">
+						<p>下载游戏<a class="font-s red">+50</a>草花币</p>
+						<p class="pd">下载任意游戏登录后即可领取！</p>
+						<div class="btn"><img src="images/lq.png"/></div>
+					</div>
+				</div>
+				<div class="list clearfix">
+					<div class="icon"><img src="images/icon3.png"/></div>
+					<div class="txt">
+						<p>下载草花APP<a class="font-s red">+50</a>积分</p>
+						<p class="pd">下载APP登录后可领取！</p>
+						<div class="btn"><img src="images/lq.png"/></div>
+					</div>
+				</div>
+				<div class="list clearfix">
+					<div class="icon"><img src="images/icon3.png"/></div>
+					<div class="txt">
+						<p>完成首冲<a class="font-s red">+50</a>草花币</p>
+						<p class="pd ellipsis">充值草花币和游戏币都可以领取！</p>
+						<div class="btn"><img src="images/ylq.png"/></div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<!--抽奖-->
+		<div class="Lottery">
+			<div class="ju JL"><img src="images/prize_btn.png"/></div>
+			<img src="images/spin.jpg"/>
+			<div class="luck_box">
+				<div class="one bg"><img src="images/prize_gold.png"/></div>
+				<div class="two"><img src="images/prize_tick6.png"/></div>
+				<div class="three"><img src="images/prize_jf20.png"/></div>
+				<div class="four"><img src="images/prize_tick9.png"/></div>
+				<div class="luck_b">
+					<p id="start" state="0"><img src="images/draw_btn.png"/></p>
+					<p><img src="images/add_btn.png"/></p>
+				</div>
+				<div class="five"><img src="images/prize_gold1.png"/></div>
+				<div class="six"><img src="images/prize_tick8.png"/></div>
+				<div class="seven"><img src="images/prize_jf50.png"/></div>
+				<div class="eight"><img src="images/prize_th.png"/></div>
+			</div>
+		</div>
+		
+		<!--抽奖end-->
+		<div class="foot">
+			<img src="images/rule.jpg"/>
+			<img src="images/copyright.jpg"/>
+			
+			<div class="f-btn">
+				<div><a href="#"><img src="images/caohua-l.png"/></a></div>
+				<div><a href="#"><img src="images/appfree_btn.png"/></a></div>
+			</div>
+		</div>
+		
+		<style type="text/css">
+			
+		</style>
+		<ul>
+			<li><a></a></li>
+			<li>asdfasd</li>
+			<li>asdfas</li>
+			<li>asdfas</li>
+		</ul>
+		
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script type="text/javascript" src="js/js.js" ></script>
+	</body>
+</html>

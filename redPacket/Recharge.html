@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>草花币充值</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="format-detection" content="telephone=no" />
+		<link rel="stylesheet" type="text/css" href="css/sdkStyle.css"/>
+	</head>
+	<body>
+		
+		
+		<p class="user_txt">充值账号</p>
+		<div class="user_name">
+			<i><img src="images/dele.png"/></i>
+			<input type="text" placeholder="请输入充值帐号" />
+		</div>
+		<p class="user_border user_txt">支付方式</p>
+		<div class="pay_way">
+			<ul>
+				<!--<li type="1">
+					<span class="qq"><img class="img" src="images/qq_01.png"/></span>
+					<span class="qq_pay">QQ钱包</span>
+				</li >-->
+				<li type="2" class="color_active">
+					<span class="qq"><img class="img" src="images/alipay_01.png"/></span>
+					<span class="qq_pay">支付宝</span>
+				</li>
+				<!--<li type="3">
+					<span class="qq bank_last"><img class="img" src="images/bank_02.png"/></span>
+					<span class="qq_pay">银行卡</span>
+				</li>-->
+			</ul>
+		</div>
+		
+		<p class="user_txt user_border">选择充值金额</p>
+		<div class="pay_num">
+			<table cellspacing="22" >
+				<tr><td class="color_active">6元</td><td>10元</td><td>20元</td></tr>
+				<tr><td>50元</td><td>100元</td><td>200元</td></tr>
+				<tr><td>500元</td><td>1000元</td><td class="td_last"><input type="text" placeholder="其它"/></td></tr>
+			</table>
+		</div>
+		
+		<div class="prompt">
+			<p>温馨提示:</p>
+			<ul>
+				<li style="color:#f22">1元=10草花币</li>
+				<li>充值问题请联系充值客服QQ：360006000；</li>
+				<li>或值班客服QQ：800032511</li>
+				<li>草花币可用于充值游戏</li>
+				<li>在线时间：09:00-24:00</li>
+				
+			</ul>
+			<!--<div class="doubt">
+				<p style="color:#f22">如有疑问，请联系客服：</p>
+				<p>QQ:800032511 </p>
+				<p>微信：caohuayouxi </p>
+				<p>在线时间：09:00-21:00</p>
+
+			</div>-->
+		</div>
+		<div class="rmb">
+			<div class="money">应付：￥<span id="rmb">10.00</span> ( 获得:<span id="chb">100</span>草花币  )</div>
+			<div class="pay">立即支付</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<script>
+			$(window).on('load',function(){
+//				$('.pay_way').find('li').on('click',function(){
+//					$(this).addClass('color_active').siblings().removeClass('color_active');
+//					$('.img').each(function(index){
+//						switch (index){
+//							case 0:
+//								$(this).attr('src','images/qq_02.png');
+//								break;
+//							case 1:
+//								$(this).attr('src','images/alipay_02.png');
+//								break;
+//							case 2:
+//								$(this).attr('src','images/bank_02.png');
+//								break;
+//						}
+//					});
+//					var n=parseInt($(this).attr('type'));
+//					switch (n){
+//						case 1:
+//							$(this).find('img').attr('src','images/qq_01.png');
+//							break;
+//						case 2:
+//							$(this).find('img').attr('src','images/alipay_01.png');
+//							break;
+//						case 3:
+//							$(this).find('img').attr('src','images/bank_01.png');
+//							break;
+//					}
+//				});
+//				
+				$('.pay_num').find('td').on('click',function(){
+					var num=parseInt($(this).html());
+					$('#chb').html(num*10);
+					$('#rmb').html(num);
+					$(this).addClass('color_active').siblings().removeClass('color_active').parents('tr').siblings().find('td').removeClass('color_active');
+				});
+//				
+				$('.td_last').children('input').on('input',function(){
+					var ptt=/^[0-9]*$/;
+					var num=$(this).val();
+					if(ptt.test(num)){
+						
+						$('#chb').html(num*10);
+						$('#rmb').html(num);
+					}else{
+						$(this).val('');
+					}
+				});
+				
+			});
+		</script>
+	
+	</body>
+</html>

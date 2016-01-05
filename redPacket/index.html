@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />   
+		<meta name="renderer" content="webkit">
+       	<meta name="format-detection" content="telephone=no">
+       	<link rel="stylesheet" type="text/css" href="css/css.css"/>
+       	<script type="text/javascript" src="js/jquery-2.1.4.min.js" ></script>
+		<script type="text/javascript" src="js/js.js" ></script>
+	</head>
+	<body>
+		<!--时间未到弹框-->
+		<div class="alert-t" style="display: none;">
+			<div class="alert-c">
+				<h4>提 示</h4>
+				亲！抢红包活动每天两次，准点开始！！！！<br />
+				（备注：活动期间每天16:00   20:00开始，仅限1小时。）
+				<div class="alert-btn alert-close">
+					我知道了
+				</div>
+			</div>
+		</div>
+		
+		<!--活动结束-->
+		<div class="alert-t" style="display: none;">
+			<div class="alert-c">
+				<h4>本活动已结束！</h4>
+						请登录手游APP，参加更多精彩活动吧！
+				<div class="alert-btns clear-F">
+					<div><a href="#">APP下载</a></div>
+					<div class="alert-close">我知道了</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<!--奖励蒙版-->
+		<!--优惠券-->
+		<div class="prize-b"  style="display: ;" id="yhq">
+			<div class="prize">
+				<img src="images/coupon_bag.png"/>
+				<div class="prize-title">
+					<h4>恭喜您获得：</h4>
+					<h3>9.5折优惠券</h3>
+					<div class="prize-c">
+						*在本活动页面购买草花币可以可享受优惠券折扣，本优惠券不可叠加使用，仅限本活动期间内使用。
+					</div>
+					<div class="btns">
+						<div style="color:#FF033F">立即使用</div>
+						<div class="exit" style="color:#fff;">稍后使用</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		
+		<!--草花币-->
+		<div class="prize-b" id="gload">
+			<div class="prize ">
+				<img src="images/gold_bag.png"/>
+				<div class="prize-title padding"  style="padding:24% 0;">
+					<h5>恭喜您获得：</h5>
+					<h3 style="color:#FBED1A;padding:4% 0;">1草花币</h3>
+					<div class="prize-c" style="padding-top: 2%;">
+						请于15分钟后登录游戏进行查询！
+					</div>
+					<div class="btns">
+						<div class="exit">我知道了</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<!--没有抢到-->
+		<div class="prize-b" id="none">
+			<div class="prize ">
+				<img src="images/no_bag.png"/>
+				<div class="prize-title padding">
+					<div class="prize-c" style="padding-top: 12%;text-align: center;font-size: 1.5rem;">
+						<span style="display: none;">没有抢到红包耶！没关系咱们再来一下吧！</span>
+						<span>您本场的机会已经使用完毕！下场继续吧^^</span>
+					</div>
+					<div class="btns" style="padding-top: 40%;">
+						<div class="exit">再来一次</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<!--红包雨蒙版-->
+		<div class="redRain">
+			<!--红包弹框-->
+			<div class="redAlert" id="redAlert" style="display: none;">
+				<div class="redP">
+					<img src="images/start_bag.png"/>
+					<div class="chai" id="chai">
+						<img src="images/chaigb.png"/>
+					</div>
+				</div>
+			</div>
+			<!--提示点击红包-->
+			<div class="prize-ts" id="ts" style="display: none;">
+				<div class="ts">
+					<img src="images/prompt.png"/>
+				</div>
+			</div>
+			<!--十秒倒计时-->
+			<div class="redTime">倒计时：10</div>
+			<!--掉红包容器-->
+			<div class="container">
+				<div class="ele1" data="1"><img src="images/small_bag.png"/></div>
+				<div class="ele2" data="1"><img src="images/small_bag.png"/></div>
+				<div class="ele3" data="0"><img src="images/small_bag.png"/></div>
+				<div class="ele4" data="1"><img src="images/small_bag.png"/></div>
+				<div class="ele5" data="0"><img src="images/small_bag.png"/></div>
+				<div class="ele6" data="1"><img src="images/small_bag.png"/></div>
+				<div class="ele7" data="0"><img src="images/small_bag.png"/></div>
+				<div class="ele8" data="1"><img src="images/small_bag.png"/></div>
+				<div class="ele9" data="1"><img src="images/small_bag.png"/></div>
+				<div class="ele10" data="0"><img src="images/small_bag.png"/></div>
+			</div>
+		</div>
+		<!--登录-->
+		<div id="login" class="mb" style="display:none;">
+			<div class="alert">
+				<div class="login-content">
+					<div class="login-title">
+						<a class="close" id="close"><img src="images/close-lg.png"/></a>
+						<p >登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</p>
+					</div>
+					<div class="form-box">
+						<div class="email margin">
+							<div class="email_img"><img src="images/user.png"/></div>
+							<div class="email_ipt"><input type="number" name="pass" placeholder="请输入用户名" /></div>
+				
+						</div>
+						<div class="email margin">
+							<div class="email_img " ><img src="images/password.png"/></div>
+							<div class="email_ipt"><input type="password" name="newPass" placeholder="请输入密码" /></div>
+						</div>
+						
+						<div class="tools">
+							<div class="auto-login clear-F">
+								<div>
+									<input id="c" type="checkbox" /><label for="c">自动登录</label>
+								</div>
+								<div>
+									<a href="http://member.caohua.com/Wap/Reg.aspx">立即注册&gt;&gt;&gt;</a>
+								</div>
+							</div>
+						</div>
+						
+						<div class="login-in">
+							登&nbsp;&nbsp;&nbsp;录
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--head-->
+		
+			<!--head-->
+		<div class="heads" id="hd">
+			<div class="logo"><a href="http://www.caohua.com"><img src="images/caohua-lg.png"></a></div>
+			<div class="mune">
+				<ul class="list_title">
+					<li style="margin-left: 12%;"><a target="_blank" href="http://dl7.caohua.com/APK/caohua/1/1/caohua.apk"><img src="images/n_3.jpg" width="100%"></a></li>
+					<li style="margin-left: 6%;"><a target="_blank"  href="http://member.caohua.com/Wap/Pay.aspx"><img src="images/n_4.png" width="100%"></a></li>
+					<li class="mune_list" data='1'>
+						<a  target="_blank"  class="popbox-link6" href="http://member.caohua.com/Wap/Reg.aspx">
+							<img id="dl" src="images/n_5.jpg" width="100%">
+						</a>
+						<ul class="admin_info" id="info">
+							<li style="padding:1% 0">游戏帐号：<span id="game_id">asdf2342356</span></li>
+							<li style="text-align: center;"><a href="#">帐号管理</a></li>
+							<li style="text-align: center;"><a  id="ext">退出帐号</a></li>
+						</ul>
+			 		</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--main-->
+		<div class="banner">
+			<img src="images/merrychristmas_01.jpg"/>
+			<div class="gz">
+				<img src="images/rule.png"/>
+			</div>
+			<!--登录前 ，后-->
+			<div class="show-login">
+				<div class="login-img"><img src="images/login.png"/></div>
+				<div class="user clear-F" style="display: none;">
+					<span class="ellipsis">【欢迎您:】<a style="color:#FF4465">我的锥子重，你拿不起</a></span><span>【退出】</span>
+				</div>
+			</div>
+			<!--时间-->
+			<div class="show-time">
+				<div class="Countdown clear-F">
+					<div id="h">12</div>
+					<div id="m">12</div>
+					<div id="s">12</div>
+				</div>
+				<div class="time-count clear-F">
+					<div><img src="images/16time_a.png"/></div>
+					<div><img src="images/20time_b.png"/></div>
+				</div>
+			</div>
+		</div>
+		
+		<!--红包-->
+		<div class="pak-b">
+			<img src="images/merrychristmas_02.jpg"/>
+			<div class="redPak">
+				<div id="star" class="star">
+					<img src="images/start_a.png"/>
+				</div>
+				
+				<div class="onePack">
+					<div>
+						<h4>您只有<span style="color:#f22;font-weight: bold;">1</span>次获奖机会</h4>
+						连续抽奖<span style="color:#f22;font-weight: bold;">5</span>次均未获奖*.*就只能等下一场再继续咯!
+					</div>
+					
+					<!--<div>
+						<h4 >恭喜您!已获得本次奖励</h4>
+						您可以进入“我的红包”查看奖品,下一场再继续吧!
+					</div>-->
+					
+				</div>
+				<!--<div class="star-over">
+					<img src="images/start_a.png"/>
+				</div>-->
+			</div>
+		</div>
+		<!--foot-->
+		<div class="count-foot">
+			<img src="images/merrychristmas_03.jpg"/>
+			<div class="left"><a href="#1"><img src="images/pt1.png"/></a></div>
+			<div class="right"><a href="#12"><img src="images/pt2.png"/></a></div>
+			<div class="downApp"><a target="_blank" href="http://dl7.caohua.com/APK/caohua/1/1/caohua.apk"><img src="images/app_download.png"/></a></div>
+		</div>
+		<img src="images/copyright.jpg"/>
+	</body>
+</html>

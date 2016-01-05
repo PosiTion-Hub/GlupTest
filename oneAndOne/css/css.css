@@ -1,0 +1,718 @@
+html,body,p,ul,li{
+	margin: 0;
+	padding:0;
+	font-family: "微软雅黑","microsoft yahei";
+}
+body *{
+	box-sizing: border-box;
+}
+body{
+	width:100%;
+	max-width: 640px;
+	min-width: 320px;
+	margin:0 auto;
+}
+.ellipsis{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.clearfix{
+	overflow: hidden;
+	zoom:1;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	width:100%;
+	clear: both;
+}
+.float-l{
+	float: left;
+}
+.head-nav img,.banner img,.getName img,.task img,.Lottery img,.foot img,.mb img{
+	width:100%;
+	display: block;
+	line-height: 0;
+	border:0;
+}
+.head-nav{
+	width:100%;
+	background: #000;
+}
+
+.logo-img{
+	width:40%;
+}
+.nav{
+	width:60%;
+	padding:1.9% 0;
+	background: #000;
+}
+.nav div:nth-child(1){
+	padding:3%;
+	width:40%;
+}
+.nav div:nth-child(2){
+	padding:3%;
+	width:30%;
+}
+.nav div:nth-child(3){
+	padding:3%;
+	width:30%;
+}
+.banner{
+	width:100;
+	position: relative;
+}
+.login-c,.app-d{
+	position: absolute;
+	width:36%;
+	bottom: 5%;
+	left:9%;
+}
+
+.app-d div:nth-child(1){
+	width:20%;
+	float: left;
+}
+
+.app-d div:nth-child(2){
+	width:80%;
+	float: left;
+}
+
+.login-c{
+	right: 9% ;
+	left: auto;
+	bottom: 4%;
+}
+
+.login-c div:nth-child(1){
+	width:62%;
+	float: left;
+	padding-top: 3%;
+}
+
+.login-c div:nth-child(2){
+	width:38%;
+	float: left;
+	padding-top: 5%;
+}
+
+.getJl{
+	width:20%;
+	position: fixed;
+	bottom: 50%;
+	right:0%;
+	z-index: 1000;
+}
+
+.getName{
+	width:100%;
+	position: relative;
+}
+.getNameMove-b{
+	position: absolute;
+	top:23%;
+	width:85%;
+	left:50%;
+	height:51%;
+	overflow: hidden;
+	margin-left: -42.5%;
+	/*border: 1px solid #ff0;*/
+}
+#gName{
+	list-style: none;
+	padding-left: 3%;
+	position: absolute;
+	top:0;
+}
+.red{
+	color:#fc391b;
+}
+#gName li{
+	padding: 1% 0;
+}
+
+
+.task{
+	width:100%;
+	position: relative;
+}
+.taskBtns{
+	width:58%;
+	position: absolute;
+	left:50%;
+	top:6.5%;
+	margin-left: -29%;
+}
+.taskBtns div{
+	width:50%;
+	float: left;
+	
+}
+.taskTab-1{
+	position: absolute;
+	top:13%;
+	width:85%;
+	left: 50%;
+	margin-left: -43.5%;
+}
+.list{
+	padding:3.5% 0;
+	
+}
+.icon{
+	width:28%;
+	float:left;
+}
+.txt{
+	width:72%;
+	font-size: 1.3rem;
+	float: left;
+	box-sizing: border-box;
+	padding-left: 3%;
+	
+}
+.font-s{
+	font-size: 1.5rem;
+}
+.pd{
+	padding: 1% 0;
+	font-size: 1.1rem;
+}
+.btn{
+	width:50%;
+}
+
+.Lottery{
+	width:100%;
+	position: relative;
+}
+.luck_box{
+	width: 82%;
+	position: absolute;
+	top:13%;
+	border:1px solid #aaa;
+	left:50%;
+	height: 71%;
+	margin-left: -41%;
+}
+
+.luck_box div{
+	position: absolute;
+	top:0;
+	width:32%;
+	background: url(../images/prize_bja.jpg) no-repeat;
+	background-size: 100%;
+}
+.two{
+	left:34%;
+}
+
+.three{
+	left:68%;
+}
+.luck_box .four{
+	top:34%;
+	left: 68%;
+}
+.luck_box .luck_b{
+	top:34%;
+	left:34%;
+	background: none;
+}
+.luck_b p:nth-child(2){
+	padding-top: 4%;
+}
+.luck_box .eight{
+	top:34%;
+	left:0;
+}
+.luck_box .seven{
+	top:68%;
+	left:0;
+}
+.luck_box .six{
+	top:68%;
+	left:34%;
+}
+
+.luck_box .five{
+	top:68%;
+	left:68%;
+}
+.luck_box .bg{
+	background: url(../images/prize_bjb.jpg) no-repeat;
+	background-size: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------弹框----------------------------------------------------*/
+.mb{
+	width:100%;
+	max-width: 640px;
+	min-width: 320px;
+	position: fixed;
+	height: 100%;
+	z-index: 1200;
+	background: rgba(11,11,11,0.5);
+}
+
+.login,.share,.Enroll{
+	margin: 5% auto;
+	width:90%;
+}
+.login-h{
+	box-sizing: content-box;
+	background-color: #0fb03d;
+	height: 35px;
+	padding: 10px 0;
+	border-radius: 5px 5px 0 0;
+}
+.login-a{
+	float: left;
+	width:50px;
+	text-align: center;
+}
+.login-a img,.exit-h-l img{
+	width:35px;
+	display: inline;
+}
+.exit-h-l{
+	float: right;
+	text-align: center;
+	width:50px;
+}
+.login-h-t{
+	padding: 0 10px;
+	color:#fff;
+	height: 35px;
+	line-height: 35px;
+	font-size:1.5rem;
+}
+
+.login-info{
+	width:100%;
+	background: #fff;
+	padding:15px 10px;
+	box-sizing: border-box;
+}
+
+.user,.pass{
+	width:100%;
+	padding: 8px 0;
+	margin-bottom: -1px;
+	border: 1px solid #c3c3c3;
+	border-bottom: none;
+}
+.pass{
+	border-bottom: 1px solid #c3c3c3;
+}
+.user div:nth-child(1),.pass div:nth-child(1){
+	float: left;
+	width:50px;
+	border-right: 1px solid #eee;
+	text-align: center;
+	height: 25px;
+	
+}
+.user div img,.pass div img{
+	width:20px;
+	display: inline;
+	height:21px;
+}
+.user-input{
+	padding-left: 51px;
+	padding-right:80px;
+	height:25px;
+}
+input:focus{
+	outline: none;
+}
+.user-input input{
+	border: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	vertical-align: top;
+	box-sizing: border-box;
+	padding-left: 10px;
+	height: 25px;
+}
+
+.yw{
+	width:70px;float: right;
+	height:25px;
+	margin-right: 8px;
+	line-height: 25px;
+	border-radius: 3px;
+	text-align: center;
+	box-sizing: content-box;
+	border:1px solid #00abdc;
+}
+.yw a{
+	color:#00abdc;
+	font-size: 0.5rem;
+	vertical-align: middle;
+	text-decoration: none;
+	box-sizing: content-box;
+}
+.login-btns{
+	width:100%;
+	background: #Fff;
+	box-sizing: border-box;
+	padding: 0 10px 18px 10px;
+	border-radius: 0 0 5px 5px;
+}
+#regedit,#login{
+	float: left;
+	width:45%;
+	margin: 0 auto;
+	height:40px;
+	line-height: 40px;
+	font-size: 1.2rem;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+#login{
+	background-color: #0bc402;
+	margin-left: 10%;
+}
+#regedit{
+	background-color:#fc6c0c;
+}
+
+
+/*分享*/
+.share{
+	background-color: #Fff;    
+	border-radius: 5px;
+	padding-bottom: 1px;
+}
+.share-all{
+	background-color: #Fff;
+	width:85%;
+	margin: 0 auto;
+	padding: 18px 10px;
+	box-sizing: border-box;
+}
+.share-all div{
+	float: left;
+	box-sizing: border-box;
+	padding:2%;
+	width:25%;
+}
+.center{
+	text-align: center;
+}
+.share-all div p{
+	text-align: center;
+	padding-top: 10px;
+	margin: 0 -10px;
+	color:#e4e4e4;
+	font-size: 1rem;
+}
+.share-exit{
+	width:80%;
+	margin: 0 auto 18px auto;
+	text-align: center;
+	height:40px;
+	font-size:1rem;
+	line-height: 40px;
+	background: #fc6c0c;
+	color: #fff;
+	border-radius: 5px;
+}
+
+/*充值*/
+.pay-title{
+	width:95%;
+	box-sizing: border-box;
+	padding:5px 0;
+	margin: 0 auto;
+	border-bottom: 1px solid #C3C3C3;
+		
+}
+.pay-title div{
+	float:left;
+	font-size: 1rem;
+	padding:5px 0;
+}
+
+.pay-title div:nth-child(2){
+	color:#ff2a53;
+	float: right;
+}
+
+
+.pay_num{
+	width:94%;
+	margin: 0 auto;
+}
+.pay_num table{
+	width:100%;
+	color: #94b9c1;
+	text-align: center;
+}
+.pay_num table td{
+	border:3px solid #94b9c1;
+	padding:3% 0%;
+	font-size: 1rem;
+	width:30.3333333%;
+}
+.pay_num .td_last{
+	padding:0;
+	position: relative
+}
+.td_last input{
+	width:100%;
+	border:none;
+	padding: 0;
+	margin: 0;
+	height:100%;;
+	font-size: 1rem;
+	color: #94b9c1;
+	text-align: center;
+}
+.pay_num .color_active{
+	border: 3px solid #60b63c;
+}
+.user_border{
+	margin: 0 auto;
+	border-bottom: 1px solid #eee;
+	width:94%;
+	text-indent: 0;
+}
+.user_txt{
+	width:90%;
+	padding-bottom:1.5%;
+	/*text-indent: 20px;*/
+	margin: 0 auto;
+	font-size: 1rem;
+	
+}
+.pay_way{
+	width:94%;
+	margin: 0 auto;
+	
+}
+.pay_way ul{
+	list-style: none;
+	overflow: hidden;
+	padding:2% 0;
+}
+
+.pay_way ul:after{
+	content: '';
+	display: block;
+	width:100%;
+	clear: both;
+}
+.pay_way ul li{
+	float: left;
+	width:30%;
+	margin-left: 2.5%;
+	box-sizing: border-box;
+	border:3px solid #60b63c;
+}
+
+.txt-c{
+	width:90%;
+	font-size: 0.7rem;
+	margin:  0 auto;
+	padding:0% 0% 2% 0%;
+}
+.rmb{
+	width:90%;
+	margin: 0 auto;
+	padding-bottom: 3%;
+}
+.rmb .money{
+	padding:3% 0;
+	float: left;
+	width:70%;
+	background: #333333;
+	text-align: center;
+	color: #fff;
+	font-size: 1rem;
+}
+.rmb .pay{
+	width:30%;padding:3% 0;
+	text-align: center;
+	float: left;
+	color: #fff;
+	font-size: 1rem;
+	background: #1AD202;
+}
+
+
+
+.zk{
+	list-style: none;
+}
+.zk li{
+	padding: 1% 0;
+	width:100%;
+	font-size: 0.9rem;
+}
+.zk li span{
+	float: left;
+	vertical-align: middle;
+}
+.zk li a{
+	float:right;
+	
+}
+.zk li img{
+	width:25px;
+	height:25px;
+}
+/*------------------------------弹框------------------------------------*/
+.content-b{
+	width:80%;
+	position: relative;
+	margin: 0 auto;
+}
+.title-img{
+	position: absolute;
+	top:-14%;
+	width:60%;
+	left: 50%;
+	margin-left: -27%;
+}
+.content{
+	width:90%;
+	position: absolute;
+	top:2%;
+	left:50%;
+	margin-left: -45%;
+}
+.txt-l{
+	text-align: left !important;
+}
+.content h3{
+	text-align: center;
+	padding:1% 0;
+	font-size: 1.2rem;
+	color:#fd0de4;
+	margin: 2%;
+	font-weight: normal;
+}
+.content p{
+	padding-left: 12%;
+	padding-bottom: 2%;
+}
+.content div{
+	width:40%;
+	margin: 1% auto;
+}
+.content h5{
+	text-align: center;
+	font-weight: normal;
+	margin: 2%;
+	color:#fd0de4;
+}
+.content article{
+	font-size: 0.9rem;
+}
+
+.content  .btns{
+	width:90%;
+}
+ .btns div{
+ 	text-align: center;
+  	float: left;
+  	width:45%;
+  }
+.ju{
+	width:24%;
+	position: absolute;
+	bottom: 5%;
+	left:50%;
+	margin-left: -12%;
+}
+.content-j{
+	width:100%;
+}
+.eixt{
+	width:12%;
+	position: absolute;
+	top:-9%;
+	right:-5%;
+}
+.jl{
+	border:3px solid #000;
+	border-radius: 5px;
+	background: #ffdd1f;
+	max-height:65%;
+}
+.Btns{
+	width:80%;
+	margin: 9% auto 0 auto;
+	padding-left: 5%;
+}
+.Btns div{
+	width:45%;
+	float: left;
+}
+.content-j table{
+	text-align: center;
+	width:90%;
+	border-collapse: collapse;
+	margin: 3% auto 3% auto;
+}
+.content-j table td{
+	padding: 1% 0;
+	font-size: 0.8rem;
+}
+td a{
+	float: left;
+}
+td a:nth-child(1){
+	width:70%;
+	padding-top: 2%;
+}
+
+td a:nth-child(2){
+	width:30%;
+}
+.foot{
+	position: relative;
+}
+.f-btn{
+	width:60%;
+	position: absolute;
+	bottom: 9%;
+	left:50%;
+	margin-left: -30%;
+}
+.f-btn div{
+	width:45%;
+	float: left;
+}
+.f-btn div:nth-child(2){
+	margin-left: 5%;
+}
+
+.code_t{
+	width: 50%;
+    height: 50%;
+    left: 50%;
+    margin-left: -25%;
+    position: fixed;
+    z-index: 10000000;
+}
+
+
+

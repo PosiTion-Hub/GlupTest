@@ -1,0 +1,54 @@
+@charset "UTF-8";
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑","microsoft yahei";
+}
+
+body {
+  width: 100%;
+  max-width: 640px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+body img {
+  width: 100%;
+  display: block;
+  line-height: 0;
+  border: 0;
+}
+
+.head {
+  width: 100%;
+  position: relative;
+}
+.head div {
+  position: absolute;
+  width: 30%;
+  background-color: #bd1838;
+  left: 50%;
+  margin-left: -15%;
+  padding: 2% 0;
+  bottom: 5%;
+  color: #fff;
+  text-align: center;
+}
+.head div a {
+  color: #fff;
+  text-decoration: none;
+}
+.head .app-down {
+  position: absolute;
+  top: 35.5%;
+  left: 60%;
+}
+.head .app-down a {
+  color: #ff2a53;
+}
+
+.app_d {
+  width: 24%;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+}
