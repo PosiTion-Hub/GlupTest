@@ -1,0 +1,487 @@
+html,body,ul,li,p,h1,h3,h2,h4,h5{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	font-family: "microsoft yahei";
+	-webkit-font-smoothing: antialiased;
+}
+body{
+	width:100%;
+	max-width: 640px;
+	margin: 0 auto;
+	min-width: 320px;
+}
+input[type=text], button, select, textarea{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0px;
+}
+a,button,input,textarea{-webkit-tap-highlight-color: rgba(255,255,255,0)}
+.none{
+	display: none;
+}
+.ellipsis{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.clearfix{
+	overflow: hidden;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	width:100%;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*head*/
+
+
+
+/*
+ 
+ * 
+ * 
+ * 
+ * 
+ * 头部文字版样式
+ 
+ * 
+ * 
+ * 
+ * 
+ * */
+.head-nav-fiex{
+	width:100%;
+	background:url(../images/head_bg.png);
+	
+}
+.head-content{
+	width:55%;
+	float: left;
+	font-size:1rem;
+	color:#fff;
+	text-indent: 10px;
+	text-align: left;
+	padding:3% 0;
+}
+.head-content img{
+	width:100%;
+}
+.head-tools{
+	width:45%;
+	float: right;
+}
+.head-tools div{
+	box-sizing: border-box;
+	width:30%;
+	padding:5% 8%;
+	margin-right: 1.5%;
+	text-align: center;
+	float: left;
+}
+
+
+/*登录框和分享*/
+
+.mb{
+	width:100%;
+	max-width: 640px;
+	min-width: 320px;
+	position: fixed;
+	height: 100%;
+	z-index: 1200;
+	background: rgba(11,11,11,0.5);
+}
+
+.login,.share,.Enroll{
+	margin: 5% auto;
+	width:90%;
+}
+.login-h{
+	background-color: #0fb03d;
+	height: 30px;
+	padding: 10px 0;
+	border-radius: 5px 5px 0 0;
+}
+.login-c{
+	float: left;
+	width:50px;
+	text-align: center;
+}
+.login-c img,.exit-h-l img{
+	width:30px;
+	display: inline-block;
+}
+.exit-h-l{
+	float: right;
+	text-align: center;
+	width:50px;
+}
+.login-h-t{
+	padding: 0 10px;
+	color:#fff;
+	height: 30px;
+	line-height: 30px;
+	font-size:1.2rem;
+}
+
+.login-info{
+	width:100%;
+	background: #fff;
+	padding:15px 10px;
+	box-sizing: border-box;
+}
+
+.user,.pass{
+	width:100%;
+	padding: 8px 0;
+	height: 25px;
+	border: 1px solid #c3c3c3;
+	border-bottom: none;
+}
+.pass{
+	border-bottom: 1px solid #c3c3c3;
+}
+.user div:nth-child(1),.pass div:nth-child(1){
+	float: left;
+	width:50px;
+	border-right: 1px solid #eee;
+	text-align: center;
+	height: 25px;
+	
+}
+.user div img,.pass div img{
+	width:20px;
+	height:21px;
+	vertical-align: top;
+	display: inline-block;
+}
+.user-input{
+	padding-left: 51px;
+}
+input:focus{
+	outline: none;
+}
+.user-input input{
+	border: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+	vertical-align: top;
+	box-sizing: border-box;
+	padding-left: 10px;
+	height: 25px;
+}
+
+.login-btns{
+	width:100%;
+	background: #Fff;
+	box-sizing: border-box;
+	padding: 0 10px 18px 10px;
+	border-radius: 0 0 5px 5px;
+}
+#regedit,#login{
+	float: left;
+	width:40%;
+	margin: 0 auto;
+	padding:3% 0;
+	font-size: 1rem;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+#login{
+	background-color: #0bc402;
+	margin-left: 6.5%;
+}
+#regedit{
+	background-color:#fc6c0c;
+	margin-left: 6.5%;
+}
+#regedit a{
+	text-decoration: none;
+	color:#fff;
+}
+
+/*弹框*/
+.winning{
+	padding: 5% 0;
+	width:80%;
+	margin: 0 auto;
+}
+.winning div{
+	margin:3% 0 2% 0;
+	font-size: 1rem;
+	color:#2a7484;
+}
+ .winning .exit{
+	width:80%;
+	margin: 6% auto 0% auto;
+	text-align: center;
+	color:#fff;
+	font-size: 2.3rem;
+	border-radius: 5px;
+	padding:4% 0;
+	background: #2a7484;
+}
+
+
+
+/*分享*/
+.share{
+	background-color: #Fff;    
+	border-radius: 5px;
+	padding-bottom: 1px;
+}
+.share-all{
+	background-color: #Fff;
+	width:100%;
+	padding: 18px 10px;
+	box-sizing: border-box;
+}
+.share-all div{
+	float: left;
+	box-sizing: border-box;
+	padding:1.5%;
+	width:20%;
+}
+.center{
+	text-align: center;
+}
+.share-all div p{
+	text-align: center;
+	padding-top: 10px;
+	margin: 0 -10px;
+	color:#e4e4e4;
+	font-size: 1rem;
+}
+.share-all div img{
+	width:100%;
+}
+.share-exit{
+	width:80%;
+	margin: 0 auto 18px auto;
+	text-align: center;
+	height:40px;
+	font-size:1rem;
+	line-height: 40px;
+	background: #fc6c0c;
+	color: #fff;
+	border-radius: 5px;
+}
+
+
+#code_t{
+	width:50%;
+	left:50%;
+	margin-left: -25%;
+	position: fixed;
+	z-index: 10000000;
+}
+
+
+
+
+
+
+
+
+
+/*middle*/
+
+.baner img{
+	width:100%;
+	line-height: 0;
+	border: none;
+	display: block;
+}
+.posi_relative{
+	position: relative;
+	width:100%;
+}
+.day{
+	width:49%;
+	position: absolute;
+	bottom: 7.8%;
+	right: 20.5%;
+	color:#e5e6ef;
+}
+
+.day .left{
+	float: left;
+	width:35%;
+}
+.day .left div{
+	float: left;
+	width:30%;
+	text-align: center;
+}
+.day .right{
+	float: right;
+	width:35%;
+}
+.day .right div{
+	float: left;
+	width:30%;
+	text-align: center;
+}
+.day_mar{
+	margin-left: 40%;
+}
+/*新老玩家按钮*/
+.user_scroll{
+	position: absolute;
+	top:3%;
+	width:60%;
+	right: 12%;
+}
+.user_scroll div{
+	float: left;
+	width:48%;
+}
+#lao{
+	margin-left: 4%;
+}
+/*btns*/
+.login_btns{
+	position: absolute;
+	bottom: 8%;
+	right:14%;
+	width:55%;
+}
+.login_btns div{
+	width:40%;
+	float: left;
+}
+.login_btns div:last-child{
+	margin-left: 20%;
+}
+
+/*新玩家*/
+.bg_r{
+	background: url(../images/bj_a.jpg);
+	padding-top: 1px;
+	padding-bottom: 2%;
+	
+}
+.bg_r .border{
+	
+	width:90%;
+	margin: 0 auto;
+	margin-top: 2%;
+	background: url(../images/bg-b.png);
+	border:1px solid #704d28;
+	color:#fff2dd;
+	box-sizing: border-box;
+	padding:3% 3% 3% 3%;
+}
+.border .txt{
+	width:65%;
+}
+.cz{
+	width:28%;
+	position: absolute;
+	right: 5%;
+	top:25%;
+}
+
+.down div{
+	float: left;
+	width:45%;
+}
+.down div:last-child{
+	margin-left: 10%;
+}
+.down div img{
+	width:65%;
+	display: block;
+	margin: 0 auto;
+}
+.down div p{
+	padding-top:5%;
+	margin: 0 -1%;
+	text-align: center;
+}
+.pd{
+	padding-bottom: 8%;
+}
+
+
+/*老用户 未充值*/
+.bg{
+	background: url(../images/bj_b.jpg);
+}
+.bg .border{
+	background: url(../images/bg_c.png);
+	border:1px solid #437748;
+}
+
+
+.lao{
+	display: table;
+}
+.lao div:first-child{
+	float: none;
+	width: auto;
+	display: table-cell;
+	vertical-align: middle;
+}
+.lao div:last-child{
+	width:96%;
+}
+/*热门推荐*/
+.hot_title{
+	text-indent: 15px;
+	padding:5% 0 0 0;
+	color:#fff2dd;
+}
+.gameIcon{
+	width:85%;
+	margin: 2% auto 0 auto;
+}
+.gameIcon li{
+	float: left;
+	box-sizing: border-box;
+	padding:2%;
+	width:25%;
+}
+.gameIcon li p{
+	padding:3% 0;
+	margin: 0 -10%;
+	text-align: center;
+	font-size: 0.6rem;
+	color:#fff2dd;
+}
+
+.logo{
+	width:55%;
+	position: absolute;
+	bottom: 24%;
+	right: 4%;
+}
+
+

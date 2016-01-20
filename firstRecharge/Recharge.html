@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>寒假来袭，首冲返100%</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta name="renderer" content="webkit">
+	    <meta name="format-detection" content="telephone=no">
+	    <link rel="stylesheet" type="text/css" href="css/Recharge.css"/>
+	    <script>
+			window.onresize=function(){
+				SetFontSize();
+			}
+			SetFontSize();
+			function SetFontSize(){
+				var deviceWidth=document.documentElement.clientWidth;
+				if(deviceWidth > 640) deviceWidth = 640;
+				document.documentElement.style.fontSize = deviceWidth / 25 + 'px';
+			}
+			
+		</script>
+	</head>
+	<body>
+		<div class="share-exit">
+			充值草花币
+		</div>	
+		<div class="share">			
+			<div class="pay-b">
+				<div class="userInfo"><span id="user" class="red">libra</span>,欢迎来到草花充值页面！本充值为赠送草花币， 1元=10草花币，可用于充值。</div>
+				<div class="pay-title clearfix">
+					<div>选择充值金额</div>
+					<div>注:1元=10草花币+10积分</div>
+				</div>
+			</div>
+			
+			<div class="pay_num">
+				<table cellspacing="15">
+					<tr><td>10元</td><td>20元</td><td>50元</td></tr>
+					<tr><td>100元</td><td>300元</td><td>500元</td></tr>
+					<tr><td>1000元</td><td>2000元</td><td class="td_last" ><input type="text" placeholder="其它" /></td></tr>
+				</table>
+			</div>
+			<p class="user_border user_txt" style="width: 100%;">支付方式</p>
+			<div class="pay_way">
+				<ul>
+					<li style="margin:0;border-bottom: 2px solid #60b63c;"><img src="images/AliPay.png"/></li>
+				</ul>
+			</div>
+			<div class="txt xx">
+				<p>充值问题请联系客服QQ800032511（08:00-24:00）</p>
+				<p ><span class="red">仅限第一笔充值返利</span>，返利奖励将在15分钟内送达到您的账户。</p>
+				<p>
+				本活动最低充值10元，充值金额为赠送草花币。
+				</p>
+			</div>
+			
+		</div>
+		<div class="rmb clearfix">
+				<div class="money">
+					应付:￥<span id="rmb">00.00</span> ( 获得:<span id="chb">00</span>草花币  )
+					返利:<span>000</span>草花币(100%)
+				</div>
+				<div class="pay">立即支付</div>
+			</div>
+
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script>
+			var pay_num=$('.pay_num').find('td'); //选择金额
+			//点击选中充值金额
+			pay_num.on('click',function(){
+				var num=parseInt($(this).html());
+				pay_num.find('input').val('');
+				if($(this).find('input').size()>=1) {
+					$('#chb').html(0);$('#rmb').html(0);
+				}
+				$(this).addClass('color_active').siblings().removeClass('color_active').parents('tr').siblings().find('td').removeClass('color_active');;
+				if($(this).hasClass('td_last')) return;
+				$('#chb').html(num*10);
+				$('#rmb').html(num);
+			});
+	
+			
+			//检测input
+			$('.td_last').children('input').on('input',function(){
+				var ptt=/^[0-9]*$/;
+				var num=$(this).val();
+				if(ptt.test(num)&&num.length<=4){
+					$('#chb').html(num*10);
+					$('#rmb').html(num);
+				}else{
+					$(this).val('');
+					$('#chb').html(0);
+					$('#rmb').html(0);
+				}
+			});
+			
+		</script>
+	</body>
+</html>

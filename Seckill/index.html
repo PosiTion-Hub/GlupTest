@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	    <title>抢购</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta name="renderer" content="webkit">
+	    <meta name="format-detection" content="telephone=no">
+	    <link rel="stylesheet" type="text/css" href="css/css.css"/>
+	    
+	    <script>
+			
+			window.onresize=function(){
+				SetFontSize();
+			}
+			SetFontSize();
+			function SetFontSize(){
+				var deviceWidth=document.documentElement.clientWidth;
+				if(deviceWidth > 640) deviceWidth = 640;
+				document.documentElement.style.fontSize = deviceWidth / 25 + 'px';
+			}
+		</script>
+	</head>
+	<body  class="bg">
+		<!--用户登录-->
+		<div class="mb"  id="login-b"  style="display:none ;">
+			<!--登录-->
+			<div class="login">
+				<div class="login-h clear-F">
+					<div class="login-c">
+						<img src="images/min-ch.png"/>
+					</div>
+					<div class="exit-h-l ext">
+						<img src="images/exit-l.png"/>
+					</div>
+					<div class="login-h-t">
+						用户登录
+					</div>
+				</div>
+				<div class="login-info">
+					<div class="user clear-F">
+						<div><img src="images/user.png"/></div>
+						<div class="user-input"><input type="text" placeholder="请输入用户名" /></div>
+					</div>
+					<div class="pass">
+						<div><img src="images/pass.png"/></div>
+						<div class="yw"><a href="">忘记密码？</a></div>
+						<div class="user-input"><input type="text" placeholder="请输入用户名" /></div>
+						
+					</div>
+				</div>
+				<div class="login-btns clearfix">
+					<div id="regedit"><a href="#">快速注册</a></div>
+					<div id="login">登录</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!--分享-->
+		<div class="mb" style="display:none;" id="share-b">
+			<div class="share">
+				<div class="login-h clearfix">
+					<div class="login-h-t center">
+						分享
+					</div>
+				</div>
+				<div class="share-all clearfix">
+					<div>
+						<img src="images/qq.png"/>
+						<p>qq好友</p>
+					</div>
+					<div id="qzone">
+						<img src="images/qq-qzone.png"/>
+						<p>qq空间</p>
+					</div>
+					<div id="weibo">
+						<img src="images/weibo.png"/>
+						<p>腾讯微博</p>
+					</div>
+					<div id="sina">
+						<img src="images/sina.png"/>
+						<p>新浪</p>
+					</div>
+					<div id="weichat">
+						<img src="images/weichat.png"/>
+						<p>微信</p>
+					</div>
+				</div>
+				<div class="share-exit  ext">取消</div>
+			</div>
+		</div>
+		
+		
+		
+			
+		<!--温馨提示-->
+		<div class="mb" style="display: none;">
+			<div class="share">
+				<div class="login-h clearfix">
+					<div class="exit-h-l">
+						<img src="images/exit-l.png"/>
+					</div>
+					<div class="login-h-t center">
+						温馨提示
+					</div>
+				</div>
+				<div class="winning">
+					<div class="tex-c">恭喜您，秒杀成功 </div>
+					<div>1元=50赠送草花币 </div>
+					<div class="exit">点击支付</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!--温馨提示-->
+		<div class="mb" style="display:none ;">
+			<div class="share">
+				<div class="login-h clearfix">
+					<div class="exit-h-l">
+						<img src="images/exit-l.png"/>
+					</div>
+					<div class="login-h-t center">
+						温馨提示
+					</div>
+				</div>
+				<div class="winning">
+					<div class="tex-c">恭喜你，支付成功 </div>
+					<div>草花币已自动到账，请登录草花手游APP进行查询！<br /> 若有疑问请联系客服QQ：800032511</div>
+					<div class="alert_btn clearfix">
+						<div><a href="#">下载APP</a></div>
+						<div>继续抢购</div>
+					</div>	
+				</div>
+				
+			</div>
+		</div>
+		
+		
+			
+		<!--温馨提示-->
+		<div class="mb" style="display: ;">
+			<div class="share">
+				<div class="login-h clearfix">
+					<div class="exit-h-l">
+						<img src="images/exit-l.png"/>
+					</div>
+					<div class="login-h-t center">
+						抢购记录
+					</div>
+				</div>
+				<div class="winning" style="width:90%;">
+					
+				</div>
+				
+			</div>
+		</div>
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="head-nav-fiex clear-F">
+		    <div class="head-content"><a href=""><img src="images/caohua-lg.png"/></a></div>
+		    <div class="head-tools clear-F">
+		        <div><a href="#"><img width="100%" src="images/down_app.png"/></a></div>
+		        <div><a href="#"><img width="100%" src="images/zhuce.png"/></a></div>
+		        <div><a href="#"><img width="100%" src="images/exit.png"/></a></div>
+		    </div>
+		</div>
+		<div>
+			<img width="100%" src="images/banner.jpg"/>
+		</div>
+		
+		<div class="user-B">
+			<img width="100%" src="images/btn_bj.jpg"/>
+			<div class="user-c">
+				<div class="userR"><img src="images/login_btn.png"/></div>
+				
+				
+				<div class="userR" style="display: none;">
+					
+					
+					<div class="posi" >
+						<div class="exitH"><img src="images/logout.png"/></div>
+						<div class="ellipsis">您好：user12FFF3456</div>
+					</div>
+					<img src="images/btn_con.png"/>
+				</div>
+				<div><img src="images/history_btn.png"/></div>
+			</div>
+		</div>
+		
+		
+		<div class="showTime">
+			<img src="images/time_bj.jpg"/>
+			<div class="TimeBox">
+				<div><img src="images/time12_a.jpg"/></div>
+				<div><img src="images/time16_b.jpg"/></div>
+				<div><img src="images/time20_b.jpg"/></div>
+			</div>
+			
+			<div class="CountDown">
+				<div id="h">00</div>
+				<div id="m">55</div>
+				<div id="s">60</div>
+			</div>
+		</div>
+		
+		<div class="cunt-list">
+			<img src="images/volume_bj.jpg"/>
+			<div class="cunt-box">
+				<div class="list clearfix">
+					<div class="left">
+						<div class="money">50</div>
+						<img src="images/volume_con.png"/>
+					</div>
+					<div class="right">
+						<div class="cunt">40/50</div>
+						<img src="images/shop_btn.jpg"/>
+						
+					</div>
+					<div class="text">
+						<div class="dele">￥:5元</div>
+						<div class="red">￥1</div>
+					</div>
+				</div>
+				
+				<div class="list clearfix marg">
+					<div class="left">
+						<div class="money">50</div>
+						<img src="images/volume_con.png"/>
+					</div>
+					<div class="right">
+						<div class="cunt">40/50</div>
+						<img src="images/shop_btn.jpg"/></div>
+					<div class="text">
+						<div class="dele">￥:5元</div>
+						<div class="red">￥1</div>
+					</div>
+				</div>
+				
+				<div class="list clearfix marg">
+					<div class="left">
+						<div class="money">500</div>
+						<img src="images/volume_con.png"/>
+					</div>
+					<div class="right">
+						<div class="cunt">40/50</div>
+						<img src="images/shop_btn.jpg"/>
+					</div>
+					<div class="text">
+						<div class="dele">￥:5元</div>
+						<div class="red">￥1234</div>
+					</div>
+				</div>
+				
+				<div class="list clearfix marg">
+					<div class="left">
+						<div class="money">500</div>
+						<img src="images/volume_con.png"/>
+					</div>
+					<div class="right">
+						<div class="cunt">40/50</div>
+						<img src="images/shop_btn.jpg"/>
+					</div>
+					<div class="text">
+						<div class="dele">￥:5元</div>
+						<div class="red">￥1232</div>
+					</div>
+				</div>
+				
+				<div class="list clearfix marg">
+					<div class="left">
+						
+						<div class="money">5000</div>
+						<img src="images/volume_con.png"/>
+					</div>
+					<div class="right">
+						<div class="cunt">40/50</div>
+						<img src="images/shop_btn.jpg"/>
+						
+					</div>
+					<div class="text">
+						<div class="dele">￥:5元</div>
+						<div class="red">￥1111</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		<div class="gameIcon">
+			<img src="images/game_con.png"/>
+			<div class="Icon_box">
+				<div class="icon_title">草花手游红警尤里的复仇专服独享</div>
+				<ul class="list-b clearfix">
+					<li>
+						<div class="icon">
+							<img src="images/dg2.png"/>
+							<div class="num">
+								￥37元
+							</div>
+						</div>
+						<div class="yj">￥50</div>
+						<div class="or">
+							VIP2+1055金币
+						</div>
+						<div class="icon_btn">
+							<img src="images/shop_btn_s.jpg"/>
+							<div class="number">10/10</div>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<img src="images/hj2.png"/>
+							<div class="num">
+								￥37元
+							</div>
+						</div>
+						<div class="yj">￥50</div>
+						<div class="or">
+							VIP2+1055金币
+						</div>
+						<div class="icon_btn">
+							<img src="images/shop_btn_s.jpg"/>
+							<div class="number">10/10</div>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<img src="images/dg2.png"/>
+							<div class="num">
+								￥37元
+							</div>
+						</div>
+						<div class="yj">￥50</div>
+						<div class="or">
+							VIP2+1055金币
+						</div>
+						<div class="icon_btn">
+							<img src="images/shop_btn_s.jpg"/>
+							<div class="number">10/10</div>
+						</div>
+					</li>
+				</ul>
+				<div class="danger">注:抢购的为草花币，需自行在游戏内使用草花币充值游戏。</div>
+			</div>
+		</div>
+		
+		<div class="app_down">
+			<a href="#"><img src="images/app_btn.jpg"/></a>
+		</div>
+		
+		
+		
+		<div class="gameIcon">
+			<img src="images/game_con.png"/>
+			<div class="Icon_box">
+				<div class="icon_title">草花手游帝国时代专服独享</div>
+				<ul class="list-b clearfix">
+					<li>
+						<div class="icon">
+							<img src="images/dg2.png"/>
+							<div class="num">
+								￥37元
+							</div>
+						</div>
+						<div class="yj">￥50</div>
+						<div class="or">
+							VIP2+1055金币
+						</div>
+						<div class="icon_btn">
+							<img src="images/shop_btn_s.jpg"/>
+							<div class="number">10/10</div>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<img src="images/dg2.png"/>
+							<div class="num">
+								￥37元
+							</div>
+						</div>
+						<div class="yj">￥50</div>
+						<div class="or">
+							VIP2+1055金币
+						</div>
+						<div class="icon_btn">
+							<img src="images/shop_btn_s.jpg"/>
+							<div class="number">10/10</div>
+						</div>
+					</li>
+					<li>
+						<div class="icon">
+							<img src="images/dg2.png"/>
+							<div class="num">
+								￥37元
+							</div>
+						</div>
+						<div class="yj">￥50</div>
+						<div class="or">
+							VIP2+1055金币
+						</div>
+						<div class="icon_btn">
+							<img src="images/shop_btn_s.jpg"/>
+							<div class="number">10/10</div>
+						</div>
+					</li>
+				</ul>
+				<div class="danger">注:抢购的为草花币，需自行在游戏内使用草花币充值游戏。</div>
+			</div>
+		</div>
+		<div class="rule">
+			<img src="images/rule.jpg"/>
+		</div>
+		<div>
+			<img width="100%" src="images/copyriht.jpg"/>
+		</div>
+		
+		
+		<script type="text/javascript" src="js/zepto.min.js" ></script>
+		<script type="text/javascript" src="js/js.js" ></script>
+	</body>
+</html>
