@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="网络游戏,家长监护工程">
+        <meta name="description" content="网络游戏未成年人家长监护工程体系">
+        <title>工程介绍-未成年-网络游戏监控</title>
+        <link href="images/favicon.ico" rel="Shortcut Icon">
+        <link rel="stylesheet" type="text/css" href="css/jz.css"/>
+    </head>
+
+    <body>
+        <div id="wraper">
+             <div id="head">
+                <a href="http://www.caohua.com/" title="草花手游">
+                    <img src="images/logo.png"></a>
+                <div id="nav">
+                    <ul>
+                        <li><a href="index.html" title="工程介绍" class="cur">工程介绍</a></li>
+                        <li><a href="Flow.html" title="申请流程">申请流程</a></li>
+                        <li><a href="FAQ.html" title="常见问题">常见问题</a></li>
+                    </ul>
+                </div>
+                <!--end nav-->
+            </div>
+            <!--end head-->
+            <div id="banner">
+
+            </div>
+            <!--end banner-->
+            <div id="main">
+                <div id="content">
+                    <h3>工程介绍</h3>
+                    <div id="jieshao">
+                        <p>“网络游戏未成年人家长监护工程”是由中华人民共和国文化部指导，旨在加强家长对未成年人参与网络游戏的监护，引导未成年人健康、绿色参与网络游戏，和谐家庭关系的社会性公益行动。它提供了一种切实可行的方法，一种家长实施监控的管道，使家长纠正部分未成年子女沉迷游戏的行为成为可能。该项社会公益行动充分反映了中国网络游戏行业高度的社会责任感，对未成年玩家合法权益的关注及对用实际行动营造和谐社会的愿望。</p>
+                    </div>
+                    <div id="tishi">
+                        <p class="p-margintop">
+                        <a id="btn-a" href="javascript:void(0)">《未成年人健康参与网络游戏提示》</a>
+                        <span id="toggleText">
+                            <span id="toggleText">←点击展开</span>
+                        </span>
+                        </p>
+                        <div id="ts" style="display: none;">
+                        	<p>为引导未成年人“玩健康的游戏”和“健康地玩游戏”，中国教育学会中小学信息技术教育委员会、中国青少年网络协会近日联合发布了《未成年人健康参与网络游戏提示》。</p>
+                            <p> 为保护未成年人健康参与游戏，在政府进一步加强行业管理的前提下，家长也应当加强监护引导。为此，为未成年人参与网络游戏提供以下意见：</p>
+                            <p>一、主动控制游戏时间。游戏只是学习、生活的调剂，要积极参与线下的各类活动，并让父母了解自己在网络游戏中的行为和体验。</p>
+                            <p>二、不参与可能耗费较多时间的游戏设置。不玩大型角色扮演类游戏，不玩有ＰＫ类设置的游戏。在校学生每周玩游戏不超过</p>
+                            <p id="textIndent">２小时，每月在游戏中的花费不超过１０元。</p>
+                            <p>三、不要将游戏当作精神寄托。尤其在现实生活中遇到压力和挫折时，应多与家人朋友交流倾诉，不要只依靠游戏来缓解压力。</p>
+                            <p>四、养成积极健康的游戏心态。克服攀比、炫耀、仇恨和报复等心理，避免形成欺凌弱小、抢劫他人等不良网络行为习惯。</p>
+                            <p>五、注意保护个人信息。包括个人家庭、朋友身份信息，家庭、学校、单位地址，电话号码等，防范网络陷阱和网络犯罪。</p>
+                        </div>
+                        <!--end ts-->
+                    </div>
+                </div>
+                <!--end content-->
+            </div>
+            <!--end main-->
+            <div id="footer">
+                <div id="foot-link">
+                    <ul>
+                        <li>
+                            <a href="http://www.caohua.com/" title="草花游戏平台">草花游戏平台&nbsp;&nbsp;|</a>
+                        </li>
+                        <li>
+                            <a href="http://www.caohua.com/gy" title="关于草花">关于草花&nbsp;&nbsp;|</a>
+                        </li>
+                        <li>
+                            <a href="http://www.caohua.com/zp" title="人才招聘">人才招聘&nbsp;&nbsp;|</a>
+                        </li>
+                        <li>
+                            <a href="http://www.caohua.com/kef" title="问题反馈">问题反馈&nbsp;&nbsp;</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--end foot-link-->
+            </div>
+            <!--end footer-->
+        </div>
+        <!--end wraper-->
+        <!--<script type="text/javascript" src="js/jquery.js"></script>-->
+        <script>
+			window.onload=function() {
+			    onLoad1();
+			};
+			function onLoad1() {
+			    var btn = document.getElementById("btn-a");
+			    var dis = document.getElementById("ts");
+			    var sp = document.getElementById("toggleText");
+			    btn.onclick = function() {
+			        if ((dis.style.display == "none")) {
+			            dis.style.display = "block";
+			            sp.innerHTML = "<span id='toggleText'>←点击收起</span>";
+			        } else {
+			            dis.style.display = "none";
+			            sp.innerHTML = "<span id='toggleText'>←点击展开</span>";
+			        }
+			    }
+			}
+        </script>
+	</body>
+</html>

@@ -1,0 +1,69 @@
+@charset "utf-8";
+/* CSS Document */
+/*public*/
+*{ margin:0; padding:0;}
+body{ background:#fff;}
+ul{ list-style:none;}
+#wraper{ width:972px; margin:0 auto;}
+#head{ width:972px; height:68px; background:#fff url(../images/title.jpg) no-repeat left top; position:relative;}
+/*#head a.first{width:120px; height:46px;}*/
+#head img{ border:none;margin-left:15px; margin-top:14px;}
+
+#nav{ width:360px; height:42px; padding-left:6px; position: absolute; right: 0; bottom:0;}
+#nav li{display:inline; width:106px; height:42px; margin:0 -4px;}
+#nav a{ display:inline-block; width:106px; height:42px; line-height:42px; margin:0 5px;background:#fff url(../images/jz-btns.png) no-repeat left top; text-align:center; text-decoration:none; font-weight:bold; color:#d2eb6c;}
+#nav a:hover{background:#fff url(../images/jz-btns.png) no-repeat left -42px; color:#fff;}
+#nav .cur{ background:#fff url(../images/jz-btns.png) no-repeat left -42px; color:#fff;}
+
+#footer{margin-bottom:200px;width:972px; height:31px; background:#fff url(../images/jz-btns.png) repeat-x left -87px;}
+#foot-link{width:410px; margin:0 auto;}/**/
+#foot-link li{ display:inline;}
+#foot-link a{ text-decoration:none; color:#fff; line-height:31px; font-size:12px; margin-left:3px;}/**/
+/* Chrome hack */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	#foot-link{
+		width:410px;
+	}
+	#foot-link a{
+		padding-left: 10px;
+	}
+}
+
+/*index*/
+#main{ width:970px; min-height:230px; border:solid 1px #3b8300;}
+#banner{ width:972px; height:342px; background:#fff url(../images/banner.jpg) no-repeat center center;}
+#content{ width:900px; min-height:230px; margin:0 auto; margin-top:20px;color:#666; font-size:15px;}/***/
+#content p{ line-height:1.5em;}
+#content h3,#con-faq h3{ font-family:"Microsoft Yahei"; font-weight:bold;}
+#jieshao,#liucheng-pic{ border-top:solid 2px #d3d3d3; margin-top:10px;}
+#jieshao p{ margin-top:10px; text-indent:2em;}/***/
+#tishi,#liucheng-tips,.question{ border-top:dashed 2px #d3d3d3; margin-top:30px;}
+/*#tishi{height:80px;}*/  /***/
+.p-margintop{ margin:15px 0;}/***/
+#tishi span{ font-weight:bold;}
+#btn-a{ font-weight:bold; color:#3b8300; text-decoration:none; cursor:pointer;}
+#btn-a:hover{cursor:pointer;}
+/*#ts{ display:none; }/**/
+#ts p{ text-indent:2em;}/***/
+#textIndent{ margin-left:30px;}
+#tishi{ margin-bottom:10px;}/***/
+
+/*liucheng*/
+#liucheng-pic{ width:910px; height:172px; background:#fff url(../images/jz-sqlc.jpg) no-repeat center center;}
+#liucheng-tips p{ margin-top:20px; margin-bottom:10px; line-height:1.7em;}/**/
+#liucheng-tips span{ font-weight:bold; color:#000;}
+#liucheng-tips img{ border:none;}
+#liucheng-tips a{color:#6aaf29; font-weight:bold;}
+#liucheng-tips a:visited{ color:#800080;}
+
+/*faq*/
+#main-faq{width:970px; height:1200px;border:solid 1px #3b8300;}
+#con-faq{width:900px; height:1200px; margin:0 auto; margin-top:20px;color:#666; font-size:15px;}
+.solid-border{ border-top:solid 2px #d3d3d3;}
+.question{ margin-top:20px;}
+.question h4{ margin-top:10px; color:#3b8300}
+.question p{ margin-top:5px; line-height:1.5em;}
+
+
+
+

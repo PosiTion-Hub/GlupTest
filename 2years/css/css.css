@@ -1,0 +1,484 @@
+html,body,ul,li,p,h1,h3,h2,h4,h5{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	font-family: "microsoft yahei";
+	-webkit-font-smoothing: antialiased;
+}
+body{
+	width:100%;
+	max-width: 640px;
+	margin: 0 auto;
+	min-width: 320px;
+}
+input[type=text], button, select, textarea{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0px;
+}
+a,button,input,textarea{-webkit-tap-highlight-color: rgba(255,255,255,0)}
+.none{
+	display: none;
+}
+.ellipsis{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.clearfix{
+	overflow: hidden;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	width:100%;
+	clear: both;
+}
+
+
+
+.head-nav-fiex{
+	width:100%;
+	background:#000;
+	
+}
+.head-content{
+	width:40%;
+	float: left;
+	font-size:1rem;
+	color:#fff;
+	text-indent: 10px;
+	text-align: left;
+	padding:0% 0;
+}
+.head-content img{
+	width:100%;
+}
+.head-tools{
+	width:50%;
+	float: right;
+}
+.head-tools div{
+	box-sizing: border-box;
+	width:30%;
+	padding:5% 8%;
+	margin-right: 1.5%;
+	text-align: center;
+	float: left;
+}
+
+
+/*登录框和分享*/
+.txt_center{
+	text-align: center;
+}
+.mb{
+	width:100%;
+	max-width: 640px;
+	min-width: 320px;
+	position: fixed;
+	height: 100%;
+	z-index: 1200;
+	background: rgba(0,0,0,0.8);
+}
+
+.login,.share,.Enroll{
+	margin: 5% auto;
+	width:90%;
+}
+.login-h{
+	background-color: #0fb03d;
+	height: 30px;
+	padding: 10px 0;
+	border-radius: 5px 5px 0 0;
+}
+.login-c{
+	float: left;
+	width:50px;
+	text-align: center;
+}
+.login-c img,.exit-h-l img{
+	width:30px;
+	display: inline-block;
+}
+.exit-h-l{
+	float: right;
+	text-align: center;
+	width:50px;
+}
+.login-h-t{
+	padding: 0 10px;
+	color:#fff;
+	height: 30px;
+	line-height: 30px;
+	font-size:1.2rem;
+}
+
+.login-info{
+	width:100%;
+	background: #fff;
+	padding:15px 10px;
+	box-sizing: border-box;
+}
+
+.user,.pass{
+	width:100%;
+	padding: 8px 0;
+	height: 25px;
+	border: 1px solid #c3c3c3;
+	border-bottom: none;
+}
+.pass{
+	border-bottom: 1px solid #c3c3c3;
+}
+.user div:nth-child(1),.pass div:nth-child(1){
+	float: left;
+	width:50px;
+	border-right: 1px solid #eee;
+	text-align: center;
+	height: 25px;
+	
+}
+.user div img,.pass div img{
+	width:20px;
+	height:21px;
+	vertical-align: top;
+	display: inline-block;
+}
+.user-input{
+	padding-left: 51px;
+}
+input:focus{
+	outline: none;
+}
+.user-input input{
+	border: none;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+	vertical-align: top;
+	box-sizing: border-box;
+	padding-left: 10px;
+	height: 25px;
+}
+
+.login-btns{
+	width:100%;
+	background: #Fff;
+	box-sizing: border-box;
+	padding: 0 10px 18px 10px;
+	border-radius: 0 0 5px 5px;
+}
+#regedit,#login{
+	float: left;
+	width:40%;
+	margin: 0 auto;
+	padding:3% 0;
+	font-size: 1rem;
+	color: #fff;
+	border-radius: 5px;
+	text-align: center;
+}
+#login{
+	background-color: #0bc402;
+	margin-left: 6.5%;
+}
+#regedit{
+	background-color:#fc6c0c;
+	margin-left: 6.5%;
+}
+#regedit a{
+	text-decoration: none;
+	color:#fff;
+}
+
+
+/*分享*/
+.share{
+	background-color: #Fff;    
+	border-radius: 5px;
+	padding-bottom: 1px;
+}
+.share-all{
+	background-color: #Fff;
+	width:100%;
+	padding: 18px 10px;
+	box-sizing: border-box;
+}
+.share-all div{
+	float: left;
+	box-sizing: border-box;
+	padding:1.5%;
+	width:20%;
+}
+.center{
+	text-align: center;
+}
+.share-all div p{
+	text-align: center;
+	padding-top: 10px;
+	margin: 0 -10px;
+	color:#e4e4e4;
+	font-size: 1rem;
+}
+.share-all div img{
+	width:100%;
+}
+.share-exit{
+	width:80%;
+	margin: 0 auto 18px auto;
+	text-align: center;
+	height:40px;
+	font-size:1rem;
+	line-height: 40px;
+	background: #fc6c0c;
+	color: #fff;
+	border-radius: 5px;
+}
+
+#code_t{
+	width:50%;
+	left:50%;
+	margin-left: -25%;
+	position: fixed;
+	z-index: 10000000;
+}
+
+.baner img{
+	width:100%;
+	line-height: 0;
+	border: none;
+	display: block;
+}
+.posi_relative{
+	position: relative;
+	width:100%;
+}
+.winning{
+	width:100%;
+	padding-bottom: 1px;
+	background: #fff;
+	border-radius: 0 0 5px 5px;
+}.winning p{
+	padding: 5% 8% 1% 8%;
+}
+.enter{
+	width:40%;
+	background: #0fb03d;
+	margin: 5% auto;
+	padding:2% 0;
+	border-radius: 5px;
+	color:#fff;
+	
+}
+
+.winning .btns{
+	width:80%;
+	margin: 5% auto;
+}
+.btns>div,.btns>a{
+	float: left;
+	color:#fff;
+	padding:4% 0;
+	text-decoration: none;
+	text-align: center;
+	border-radius: 5px;
+	background: #0fb03d;
+	width:45%;
+	
+}
+.btns>div{
+	margin-left: 10%;
+}
+/*=============================================================================*/
+
+.oneH,.twoH{
+	width:50%;
+	float: left;
+	box-sizing: border-box;
+	padding:1%;
+}
+
+.huoD1{
+	color:#fff;
+	position: absolute;
+	top:20%;
+	width:92%;
+	margin-left: -46%;
+	left:50%;
+	font-size: 0.8rem;
+	line-height: 140%;
+}
+.huoD1 div{
+	color:#fde800;
+	font-size: 0.8rem;
+}
+/*.huoD1 table{
+	width:100%;
+	
+	text-align: center;
+	border-collapse:collapse;
+	border-radius: 5px 0 0 0;
+	
+	color:#300000;
+}
+.huoD1 td{
+	font-size: 0.8rem;
+	line-height: 150%;
+	border: 2px solid #310003;
+}*/
+.baner{
+	background: #620808;
+}
+/*.huoD1 td .ellipsis{
+	width:100%;
+	
+}
+.huoD1 td
+.borderB td{
+	border-bottom: none;
+	padding:1% 0;
+}
+.borderT td{
+	border-top: none;
+}
+.borderT{
+	background: #fff;
+}*/
+.btn{
+	width:40%;
+	margin: 2% auto 0 auto;
+}
+
+
+.TwoNum{
+	position: absolute;
+	top:30%;
+	width:100%;
+}
+.TwoNum .num,.ThreeD .num{
+	width:12%;
+	/*margin:0 auto;*/
+	padding:2% 0;
+	font-size: 1.2rem;
+	text-align: center;
+	margin-left: 46.1%;
+}
+.mat{
+	margin: 11%  auto 0 auto;
+}
+.ThreeD{
+	position: absolute;
+	top:21%;
+	width:100%;
+	
+}
+.ThreeD .num{
+	
+	margin-left: 56%;
+}
+
+.iconB{
+	width:68%;
+	margin: 11% auto 0 auto;
+}
+.iconB div{
+	width:22%;
+	margin-left: 3.5%;
+	float: left;
+}.iconB div:first-child{
+	margin-left: 0;
+}
+.Ttxt{
+	width:100%;
+	text-align: center;
+	font-size: 0.8rem;
+	color:#fff000;
+	padding:1% 0;
+}
+.ThreeD .mat{
+	margin-top: 1%;
+}
+
+.fourD{
+	width:100%;
+	position: absolute;
+	top:36%;
+	
+}
+
+.fourD p{
+	width:80%;
+	margin: 0 auto;
+	color:#fff;
+}
+
+.fourD .mat{
+	margin-top: 7%;
+}
+
+.fiveD{
+	width:100%;
+	position: absolute;
+	top:23%;
+}
+.fiveD .list{
+	width:96%;
+	margin: 0 auto;
+}
+.fiveD .list div{
+	float: left;
+	width:22%;
+	margin-left: 2.5%;
+	position: relative;
+}
+.fiveD .list div:first-child{
+	margin-left: 2%;
+}
+.fiveD .list a{
+	position: absolute;
+	width:100%;
+	bottom: 10%;
+	text-align: center;
+	font-size: 0.8rem;
+	color:#290004;
+}
+
+
+.tab1 p{
+	font-size: 0.9rem;
+	WIDTH:90%;
+	line-height: 150%;
+	padding:2% 0;
+	margin: 0 auto;
+	color:#fff;
+}
+.tab1 .mat{
+	margin-top: 3%;
+}
+.huoDT{
+	position: absolute;
+	top:2%;
+	width:44%;
+	left:50%;
+	margin-left: -22%;
+}
+
+.appD{
+	width:100%;
+	max-width: 640px;
+	min-width: 320px;
+	position: fixed;
+	z-index: 10;
+	top:45%;
+}
+.appD a{
+	display: block;
+	float: right;
+	width:18%;
+}
+.appD img{
+	width:100%;
+}
