@@ -291,7 +291,7 @@ input:focus{
 .number{
 	position: absolute;
 	width:42%;
-	left:50%;
+	left:45.5%;
 	margin-left: -21.3%;
 	bottom: 18%;
 }
@@ -327,11 +327,13 @@ input:focus{
 
 
 .tellME{
-	bottom: 17%;
+	position: static;
+	background: #ca3030;
+	margin: 0 auto;
 }
 
 .bottomCop{
-	bottom: 4.5%;
+	bottom: 29%;
 	width:60%;
 	left:50%;
 	margin-left: -30%;
@@ -633,4 +635,26 @@ input:focus{
 }
 .red{
 	color:#f00;
+}
+
+
+
+.xxx{
+	width:100%;
+	background: #ca3030;
+}
+.xxx table{
+	width:90%;
+	margin: 0 auto;
+	text-align: center;
+	border-collapse: collapse;
+}
+.xxx table td{
+	font-size: 0.8rem;
+	color:#fff;
+	border:2px solid #fff;
+	padding:2% 0;
+}
+.col{
+	color:#fcd715;
 }

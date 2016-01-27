@@ -8,13 +8,14 @@
 		setHeight(z('#share-b').find('.share'));
 	});
 	
+	var hf=location.origin+'/glup/CheckIn/images/weibo.png';
 	z('#qq').click(function(){
 		var xx='http://connect.qq.com/widget/shareqq/index.html?url='+u+'&desc=&title=&summary=&pics=&flash=&site=&style=201&width=32&height=32&showcount=';
 		window.location.href=xx;
 	});
 	
 	z('#qzone').click(function(){
-		var xx='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+u+'&title=ch&pics=ture&summary=ch';
+		var xx='http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url='+u+'&title=ch&pics='+hf+'&summary=ch';
 		
 		window.location.href=xx;
 	});

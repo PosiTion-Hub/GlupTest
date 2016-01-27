@@ -1,0 +1,352 @@
+html,body,ul,li,p,h1,h3,h2,h4,h5,input{
+	margin: 0;
+	padding: 0;
+	list-style:none;
+	font-family: "microsoft yahei";
+}
+body{
+	width:100%;
+	max-width: 640px;
+	margin: 0 auto;
+	min-width: 320px;
+}
+
+.ellipsis{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.clearfix{
+	overflow: hidden;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	width:100%;
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mb {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    position: fixed;
+    height: 100%;
+    z-index: 1200;
+    background: rgba(11, 11, 11, 0.5);
+}
+
+.login, .share, .Enroll {
+    margin: 5% auto;
+    width: 95%;
+}
+
+.login-h {
+    background-color: #0fb03d;
+    height: 32px;
+    padding: 2% 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.login-c {
+    float: left;
+    width: 50px;
+    text-align: center;
+}
+
+.login-c img, #exit-h-l img {
+    width: 32px;
+}
+
+#exit-h-l {
+    float: right;
+    text-align: center;
+    width: 50px;
+}
+
+.login-h-t {
+    padding: 0 10px;
+    color: #fff;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.3rem;
+}
+
+.login-info {
+    width: 100%;
+    background: #fff;
+    padding: 15px 10px;
+    box-sizing: border-box;
+}
+
+.user, .pass {
+    width: 100%;
+    padding: 8px 0;
+
+    border: 1px solid #c3c3c3;
+    border-bottom: none;
+}
+
+.pass {
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.user div:nth-child(1), .pass div:nth-child(1) {
+    float: left;
+    width: 50px;
+    border-right: 1px solid #eee;
+    text-align: center;
+    height: 25px;
+
+}
+
+.user div img, .pass div img {
+    width: 20px;
+    height: 21px;
+}
+
+.user-input {
+    padding-left: 51px;
+    /*padding-right: 80px;*/
+}
+
+input:focus {
+    outline: none;
+}
+.user-input input {
+    border: none;
+    width: 100%;
+    padding: 0;
+    vertical-align: top;
+    margin: 0;
+    box-sizing: border-box;
+    padding-left: 10px;
+    height: 25px;
+}
+
+
+
+.Prompt{
+	margin-top: 15px;
+	background: #e74024;
+	border-radius: 5px;
+	text-align: center;
+	color: #fff;
+	/*line-height: 32px;*/
+	/*height:32px;*/
+	padding:5px 0;
+	font-size: 15px;
+}
+.Prompt img{
+	vertical-align: top;
+}
+.Prompt span{
+	vertical-align: top;
+}
+.yw {
+    width: 100px;
+    position: absolute;
+    /*height: 44px;*/
+    /*margin-top: -8px;*/
+    line-height: 0;
+    right: 0;
+    top:0;
+    height:100%;
+    color: #00abdc;
+    border-radius: 3px;
+    text-align: center;
+}
+#goBlank{
+	
+    text-decoration:underline;
+}
+#yzm{
+	padding-right: 100px;
+}
+
+.login-btns {
+    width: 100%;
+    background: #Fff;
+    box-sizing: border-box;
+    padding: 0 10px 18px 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+#regedit, #login {
+    float: left;
+    width: 45%;
+    /*height: 40px;*/
+    /*line-height: 40px;*/
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3% 0;
+}
+
+#login {
+    background-color: #0bc402;
+    margin-left: 10%;
+}
+
+#regedit {
+    background-color: #fc6c0c;
+}
+
+/*快速注册*/
+.Enroll {
+    background: #fff;
+    padding-bottom: 1px;
+    border-radius: 5px;
+}
+
+.Enroll-h > div {
+    width: 50%;
+    float: left;
+}
+
+.iphone {
+    background: #0fb03d;
+    padding: 10px 0;
+    border-radius: 5px 0 0 0;
+}
+
+.i_active {
+    color: #0fb03d !important;
+    background: #fff;
+}
+
+.i_active div {
+    color: #0fb03d !important;
+}
+
+.iphone img {
+    width: 20px;
+    height: 30px;
+}
+
+.iphone div:nth-child(1) {
+    float: left;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+.iphone div:nth-child(2) {
+    width: 100%;
+    font-size: 2rem;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    color: #fff;
+    padding-left: 60px;
+}
+
+.zc-uset {
+    background: #fff;
+    padding: 10px 0;
+    border-radius: 0 5px 0 0;
+}
+
+.zc-uset img {
+    width: 30px;
+}
+
+.zc-uset div:nth-child(1) {
+    float: left;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+.zc-uset div:nth-child(2) {
+    width: 100%;
+    font-size: 2rem;
+    height: 30px;
+    box-sizing: border-box;
+    line-height: 30px;
+    color: #0fb03d;
+    border-radius: 0 5px 0 0;
+    padding-left: 60px;
+}
+
+.zhuce {
+    width: 100%;
+    margin: 5% auto 2% auto;
+    background: #FC6C0C;
+    color: #fff;
+    text-align: center;
+    padding: 2% 0;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+.enterPass{
+	position: relative;
+	border-top:none;
+}
+.zc-txt {
+    width: 95%;
+    margin: 0 auto;
+    padding: 0% 0 5% 0;
+}
+
+.zc-txt div {
+    color: #d6d6d6;
+    font-size: 0.9rem;
+}
+
+.zc-txt div:first-child {
+    float: right;
+    color: #00abdc;
+    font-size: 0.9rem;
+}

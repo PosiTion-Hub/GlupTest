@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	    <meta http-equiv="Content-Type" content="text/html; charset=GBK">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	    <meta name="renderer" content="webkit">
+	    <meta name="format-detection" content="telephone=no">
+	    <link rel="stylesheet" type="text/css" href="css/PublicCSS.css"/>
+	     <script>
+			window.onresize=function(){
+				SetFontSize();
+			}
+			SetFontSize();
+			function SetFontSize(){
+				var deviceWidth=document.documentElement.clientWidth;
+				if(deviceWidth > 540) deviceWidth = 540;
+				document.documentElement.style.fontSize = deviceWidth / 25 + 'px';
+			}
+		</script>
+	</head>
+	<body>
+		
+		
+		<!--用户登录-->
+		<div class="mb" style="display: none;">
+		    <!--登录-->
+		    <div class="login" id="login-b">
+		        <div class="login-h clearfix">
+		            <div class="login-c">
+		                <img src="images/min-ch.png"/>
+		            </div>
+		            <div id="exit-h-l">
+		                <img src="images/exit-l.png"/>
+		            </div>
+		            <div class="login-h-t">
+		            	    用户登录
+		            </div>
+		        </div>
+		        <div class="login-info">
+		            <div class="user clearfix">
+		                <div><img src="images/user.png"/></div>
+		                <div class="user-input"><input type="text" placeholder="请输入用户名"/></div>
+		            </div>
+		            <div class="pass">
+		                <div><img src="images/pass.png"/></div>
+		                <div class="user-input"><input type="text" placeholder="请输入用户名"/></div>
+		
+		            </div>
+		            <div class="Prompt">
+		            	<img width="20" height="20" src="images/alertIcon.png"/>
+		            	 <span>账号或密码输入错误，请重新输入！ </span>
+		            </div>
+		        </div>
+		        <div class="login-btns clearfix">
+		            <div id="regedit">快速注册</div>
+		            <div id="login">登录</div>
+		        </div>
+		    </div>
+		
+		
+		    <!--快速注册-->
+		    <div class="Enroll" style="display: ;">
+				<div class="login-h clearfix">
+		            <div class="login-c">
+		                <img src="images/user_title.png"/>
+		            </div>
+		            <div id="exit-h-l">
+		                <img src="images/exit-l.png"/>
+		            </div>
+		            <div class="login-h-t">
+		            	    快速注册
+		            </div>
+		        </div>
+		        <!--<div class="Enroll-h clear-F">
+		            <div class="iphone">
+		                <div><img src="images/iphone.png "/></div>
+		                <div>手机号注册</div>
+		            </div>
+		            <div class="zc-uset ">
+		                <div><img src="images/zc-user1.png"/></div>
+		                <div></div>
+		            </div>
+		        </div>-->
+		
+		
+		        <div id="iphone-zc" style="display: ;">
+		            <div class="login-info">
+		                <div class="user clear-F">
+		                    <div>
+		                    	<img src="images/user.png"/>
+		                    </div>
+		                    <div class="user-input">
+		                    	<input type="text" placeholder="请输入用户名"/></div>
+		              		</div>
+		                <div class="pass">
+		                    <div>
+		                    	<img src="images/pass.png"/>
+		                    </div>
+		                    <div class="user-input">
+		                    	<input type="text" placeholder="请输入密码"/>
+		                    </div>
+		                </div>
+		                <div class="pass enterPass">
+		                    <div>
+		                    	<img src="images/pass.png"/>
+		                    </div>
+		                    <div class="user-input">
+		                    	<input type="text" placeholder="请输入密码"/>
+		                    </div>
+		                </div>
+		                <div class="pass enterPass">
+		                    <div>
+		                    	<img src="images/mub.png"/>
+		                    </div>
+		                    <div class="yw"><img style="width: 100%;height: 100%;" src="images/number.png"/></div>
+		                    <div class="user-input" id="yzm" >
+		                    	<input type="text" placeholder="验证码"/>
+		                    </div>
+		                    
+		                </div>
+		                
+		                <div class="Prompt">
+		            		<img width="20" height="20" src="images/alertIcon.png"/>
+		            		<span>账号或密码输入错误，请重新输入！ </span>
+		         		</div>
+		                
+		                
+		                 <div class="zhuce">
+		       		   	      注册
+		          		 </div>
+		
+		            </div>
+		
+		           
+		            <div class="zc-txt clear-F">
+		                <div id="goBlank">&lt;返回登录</div>
+		                <div>注册即同意《草花服务条款》</div>
+		
+		            </div>
+		        </div>
+		
+		
+		        <!--手机注册-->
+		        <!--<div id="iphone-zc">
+		            <div class="login-info">
+		                <div class="user clear-F">
+		                    <div><img src="images/user.png"/></div>
+		                    <div class="yw" style="width:90px">重新发送(<span>60</span>s)？</div>
+		                    <div class="user-input" style="padding-right: 100px;"><input type="text" placeholder="请输入用户名"/>
+		                    </div>
+		                </div>
+		                <div class="pass">
+		                    <div><img src="images/pass.png"/></div>
+		                    <div class="user-input"><input type="text" placeholder="请输入密码"/></div>
+		                </div>
+		            </div>
+		            <div class="zhuce">
+		           		     注册
+		            </div>
+		
+		            <div class="zc-txt clear-F">
+		                <div>&lt;返回登录</div>
+		                <div>注册即同意《草花服务条款》</div>
+		
+		            </div>
+		        </div>-->
+		    </div>
+		</div>
+
+		
+		
+		
+		<!-- JiaThis Button BEGIN -->
+<div class="jiathis_style_32x32">
+	<a class="jiathis_button_qzone"></a>
+	<a class="jiathis_button_tsina"></a>
+	<a class="jiathis_button_tqq"></a>
+	<a class="jiathis_button_weixin"></a>
+	<a class="jiathis_button_renren"></a>
+	<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	<a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+		
+		
+		
+		<!--用户登录-->
+		<div class="mb"  id="login-b"  style="display:none ;">
+			<!--登录-->
+			<div class="login">
+				<div class="login-h clear-F">
+					<div class="login-c">
+						<img src="images/min-ch.png"/>
+					</div>
+					<div class="exit-h-l ext">
+						<img src="images/exit-l.png"/>
+					</div>
+					<div class="login-h-t">
+						用户登录
+					</div>
+				</div>
+				<div class="login-info">
+					<div class="user clear-F">
+						<div><img src="images/user.png"/></div>
+						<div class="user-input"><input type="text" placeholder="请输入用户名" /></div>
+					</div>
+					<div class="pass">
+						<div><img src="images/pass.png"/></div>
+						<div class="yw"><a href="">忘记密码？</a></div>
+						<div class="user-input"><input type="text" placeholder="请输入用户名" /></div>
+						
+					</div>
+				</div>
+				<div class="login-btns clearfix">
+					<div id="regedit"><a href="#">快速注册</a></div>
+					<div id="login">登录</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!--分享-->
+		<div class="mb" style="display:none;" id="share-b">
+			<div class="share">
+				<div class="login-h clearfix">
+					<div class="login-h-t center">
+						分享
+					</div>
+				</div>
+				<div class="share-all clearfix">
+					<div>
+						<img src="images/qq.png"/>
+						<p>qq好友</p>
+					</div>
+					<div id="qzone">
+						<img src="images/qq-qzone.png"/>
+						<p>qq空间</p>
+					</div>
+					<div id="weibo">
+						<img src="images/weibo.png"/>
+						<p>腾讯微博</p>
+					</div>
+					<div id="sina">
+						<img src="images/sina.png"/>
+						<p>新浪</p>
+					</div>
+					<div id="weichat">
+						<img src="images/weichat.png"/>
+						<p>微信</p>
+					</div>
+				</div>
+				<div class="share-exit  ext">取消</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!--head start-->
+		
+		<div class="head-nav-fiex clear-F" style="display: none;">
+		    <div class="head-content"><a href=""><img src="images/caohua-lg.png"/></a></div>
+		    <div class="head-tools clear-F">
+		        <div><a href="#"><img width="100%" src="images/down_app.png"/></a></div>
+		        <div><a href="#"><img width="100%" src="images/zhuce.png"/></a></div>
+		        <div><a href="#"><img width="100%" src="images/exit.png"/></a></div>
+		    </div>
+		</div>
+		
+		<!--head end-->
+		
+		
+		
+		
+		
+	</body>
+</html>
